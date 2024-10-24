@@ -1,0 +1,145 @@
+/* New Style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 86px;
+  background-color: var(--white);
+  padding: 28px 14px 28px 12px;
+}
+.sidebar-links-wrapper {
+  background: var(--caribbean-green);
+  border-radius: 18px;
+  padding: 22px 8px;
+}
+.menulist {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.menulist:not(:last-child) {
+  margin-bottom: 18px;
+}
+.menulist.active {
+  background: #fff;
+}
+.menulist.active::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 3px;
+  height: 28px;
+  background: #05c882;
+  transform: rotate(-180deg);
+  border-radius: 9px 0px 0px 9px;
+}
+
+.sidebarmenu {
+  left: 60px;
+  position: absolute;
+  background: #05c882;
+  height: 50px;
+  padding: 0px 0px;
+  color: #fff;
+  font-size: 0px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0px 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  z-index: -1;
+  white-space: nowrap;
+}
+.menulist:hover .sidebarmenu {
+  left: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 25px 0px 25px;
+  font-size: 16px;
+  transition: all ease 0.4s;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.imgacctive {
+  display: none;
+}
+.active .nonactive {
+  display: none;
+}
+.active .imgacctive {
+  display: block;
+}
+
+.nav__link.active .navicon {
+  background: #fff;
+}
+
+/* New Style */
+
+@media only screen and (max-width: 1439px) {
+  .menulist:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .menulist {
+    width: 32px;
+    height: 32px;
+  }
+  .sidebar-links-wrapper {
+    padding: 16px 8px;
+  }
+  .menulist img {
+    width: 20px;
+    height: 20px;
+  }
+   .menulist:hover .sidebarmenu {
+    font-size: 12px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .menulist.active::after {
+    display: none;
+  }
+  .menulist {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .menulist.active {
+    background: transparent;
+  }
+  .menulist-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    background: transparent;
+  }
+  .menulist.active .menulist-icon-wrap {
+    background: #fff;
+  }
+}

@@ -1,0 +1,426 @@
+.documents-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.5rem 0 16px;
+}
+.documents-header .custom-dropdown {
+  margin-left: 34px;
+}
+.documents-header .custom-dropdown .avatar-img {
+  width: 36px;
+  height: 36px;
+  outline: 5px solid #e1e1f4;
+}
+.custom-tabs-wrapper .ant-tabs {
+  font-family: "Montserrat", sans-serif !important;
+}
+.custom-tabs-wrapper .ant-tabs-nav-wrap {
+  min-width: 358px;
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  background: #fff;
+  padding: 20px;
+}
+.custom-tabs-wrapper .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab {
+  margin-right: 0px;
+  min-width: auto;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.documents-tabs-wrap
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  > .ant-tabs-tab:first-child {
+  margin-right: 0px;
+}
+
+.custom-tabs-wrapper
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 6px;
+  background: #f9f9ff;
+}
+.custom-tabs-wrapper .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  display: none;
+}
+
+.custom-tabs-wrapper .ant-tabs-left > .ant-tabs-content-holder {
+  border-left: 1px solid transparent;
+  padding-left: 6.3rem;
+}
+
+.tabs-icon-wrap {
+  border-radius: 6px;
+  background: #ececff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.custom-tabs-wrapper
+  .ant-tabs-left
+  > .ant-tabs-content-holder
+  > .ant-tabs-content
+  > .ant-tabs-tabpane {
+  padding-left: 0;
+}
+.documents-tabs-wrap .ant-tabs-tabpane {
+  padding: 0;
+}
+
+.documents-wrap .page-wrap {
+  margin-bottom: 4.2rem;
+}
+.documents-tabs-wrap .ant-tabs .ant-tabs-tab {
+  border-radius: 6px;
+  border: 1px solid #e5eef7;
+  padding: 16px 20px;
+  min-width: 259px;
+  color: #25204a;
+  font-size: 16px;
+  background: #fff;
+  font-weight: 600;
+}
+.documents-tabs-wrap .ant-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  border-color: #05c882;
+  background: #ebfbf5;
+}
+.documents-tabs-wrap
+  .ant-tabs
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #25204a;
+}
+
+.documents-tabs-wrap .ant-tabs-ink-bar.ant-tabs-ink-bar-animated,
+.documents-tabs-wrap .ant-tabs-top > .ant-tabs-nav::before {
+  display: none;
+}
+
+/* .page-link-wrap {
+  border-radius: 6px;
+  border: 1px solid #e5eef7;
+  padding: 17px 20px;
+  min-width: 259px;
+  color: #25204a;
+  font-size: 16px;
+  font-weight: 600;
+} */
+.page-link-wrap:not(:last-child) {
+  margin-right: 15px;
+}
+.page-link-wrap:active,
+.page-link-wrap:focus {
+  border-color: #05c882;
+  background: #ebfbf5;
+}
+
+.documents-tabs-wrap .ant-tabs .ant-tabs-tab .icon-wrap {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebfbf5;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 10px;
+  color: #05c882;
+}
+.documents-tabs-wrap .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .icon-wrap,
+.documents-tabs-wrap .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .icon-wrap {
+  background-color: #05c882;
+  color: #fff;
+}
+.custom-select .ant-select-selector {
+  font-family: "Montserrat", sans-serif !important;
+  border-radius: 500px;
+  border: 1px solid #d3e3f1;
+  background: #fff;
+  font-size: 16px;
+  padding: 0 20px !important;
+  color: #8d8da3;
+}
+.custom-select .ant-select-single {
+  height: 50px;
+  min-width: 135px;
+  max-height: 135px;
+  color: #8d8da3;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tabs-content-header-wrap .custom-checkbox-wrap .ant-checkbox + span {
+  font-weight: 400;
+}
+
+.tabs-content-header-wrap .ant-checkbox-wrapper {
+  font-family: "Montserrat", sans-serif !important;
+}
+.tabs-content-header-wrap
+  .custom-checkbox-wrap
+  .ant-checkbox
+  .ant-checkbox-inner {
+  border: 1px solid #d3e3f1;
+}
+.tabs-content-header-wrap .custom-checkbox-wrap > label:not(:last-child) {
+  margin-right: 5.4rem;
+}
+
+.documents-table-wrap {
+  border-radius: 18.845px;
+  background: #fff;
+  margin-top: 26px;
+}
+
+/* .documents-table-wrap .ant-tabs-nav-wrap {
+  min-width: 218px;
+} */
+.documents-table-wrap
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab.ant-tabs-tab-active {
+  border-radius: 0px;
+  background: transparent;
+}
+
+.documents-tabs-wrap .ant-tabs-top > .ant-tabs-nav {
+  margin: 0 0 30px 0;
+}
+.documents-table-wrap .ant-tabs-nav-wrap {
+  z-index: 1;
+  min-width: 218px !important;
+  min-height: 226px;
+  /* min-height: 218px;
+  max-height: 218px; */
+  border-radius: 18.845px 0px 0px 18.845px;
+  border: 0.898px solid #b6c9db;
+  background: #f5f5fd;
+  padding: 28px 28px 28px 22px;
+}
+.documents-table-wrap .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #060030;
+  font-size: 16px;
+  font-weight: 600;
+}
+.documents-table-wrap .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #05c882 !important;
+}
+.documents-table-wrap .ant-tabs .ant-tabs-tab-btn:focus:not(:focus-visible) {
+  color: #05c882 !important;
+}
+
+.documents-table-wrap .ant-tabs-left > .ant-tabs-content-holder {
+  padding-left: 0;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #d3e3f1;
+  overflow: hidden;
+  border-top-right-radius: 18.845px;
+  border-bottom-right-radius: 18.845px;
+}
+
+.documents-table-wrap .ant-table-thead tr > th {
+  background: transparent;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(213, 213, 229, 0.5);
+}
+.documents-table-wrap .ant-table-wrapper .ant-table-tbody tr > td {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--manatee);
+  border-bottom: 1px solid rgb(213, 213, 229, 0.5);
+}
+.documents-table-wrap .ant-table-thead tr > th::before {
+  display: none;
+}
+.link.link-red {
+  color: #ef0064;
+  font-weight: 500;
+}
+
+/* ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+} */
+
+.header-menu-wrap .ant-btn.ant-btn-default {
+  width: auto;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #626276;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #e2e2f8;
+}
+.header-menu-wrap .ant-btn.ant-btn-default:not(:last-child) {
+  margin-right: 5px;
+}
+.header-menu-wrap .ant-btn.ant-btn-default img {
+  margin-right: 10px;
+}
+.header-menu-wrap .ant-btn.ant-btn-default:hover,
+.header-menu-wrap .ant-btn.ant-btn-default:focus,
+.header-menu-wrap .ant-btn.ant-btn-default:active {
+  color: #626276;
+  background-color: #cdcddd;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1439px) {
+  .documents-table-wrap .ant-table-wrapper table {
+    min-width: 700px;
+    max-width: 700px;
+  }
+  .documents-table-wrap .ant-table-content {
+    overflow-x: auto;
+  }
+  .custom-tabs-wrapper .ant-tabs-nav-wrap {
+    min-width: 300px;
+  }
+  .documents-tabs-wrap .ant-tabs .ant-tabs-tab,
+  .documents-table-wrap .ant-tabs-tab .ant-tabs-tab-btn {
+    font-size: 15px;
+  }
+  .documents-tabs-wrap .ant-tabs .ant-tabs-tab {
+    min-width: 220px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .documents-tabs-wrap .ant-tabs-tabpane {
+    padding-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .custom-tabs-wrapper .ant-tabs {
+    flex-wrap: wrap;
+  }
+  .custom-tabs-wrapper .ant-tabs > .ant-tabs-nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .custom-tabs-wrapper .documents-table-wrap .ant-tabs > .ant-tabs-nav {
+    margin-bottom: 0px;
+  }
+  .custom-tabs-wrapper .ant-tabs-left > .ant-tabs-content-holder {
+    padding-left: 0;
+  }
+  .documents-table-wrap .ant-tabs-nav-wrap {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    min-height: unset;
+  }
+  .documents-table-wrap
+    .ant-table-wrapper
+    .ant-table-container
+    table
+    > thead
+    > tr:first-child
+    > *:first-child {
+    border-start-start-radius: 0px;
+  }
+  .documents-table-wrap .ant-tabs-left > .ant-tabs-content-holder {
+    border-width: 0px 1px 1px 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .documents-table-wrap .ant-tabs-nav-wrap {
+    padding: 20px;
+  }
+  .custom-select {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .custom-select .ant-select-single {
+    height: 45px;
+    min-width: 160px;
+    max-height: 160px;
+  }
+  .documents-table-wrap .ant-table-wrapper .ant-table-tbody tr > td,
+  .documents-table-wrap .ant-table-thead tr > th {
+    font-size: 14px;
+  }
+  .documents-table-wrap .ant-table-wrapper table {
+    min-width: 550px;
+    max-width: 550px;
+  }
+  .documents-tabs-wrap .ant-tabs .ant-tabs-tab {
+    padding: 14px 16px;
+  }
+  .custom-tabs-wrapper .ant-tabs-nav-wrap {
+    min-width: auto;
+  }
+  .documents-header.btns {
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+  }
+  .documents-header .header-menu-wrap {
+    margin-top: 12px;
+  }
+  .documents-header .profile-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .documents-header .custom-dropdown span {
+    font-size: 13px;
+  }
+  .documents-header .custom-dropdown .avatar-img {
+    width: 30px;
+    height: 30px;
+    outline: 3px solid #e1e1f4;
+  }
+  .documents-header h2 {
+    font-size: 18px;
+  }
+  .documents-header .custom-dropdown {
+    margin-left: 10px;
+  }
+  .tabs-icon-wrap {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .documents-header .header-menu-wrap {
+    flex-wrap: wrap;
+  }
+  .documents-header .header-menu-wrap .ant-btn.ant-btn-default {
+    min-width: 130px;
+    margin-bottom: 10px;
+  }
+  .documents-tabs-wrap .ant-tabs .ant-tabs-tab {
+    min-width: 170px;
+  }
+  .documents-tabs-wrap .ant-tabs .ant-tabs-tab,
+  .documents-table-wrap .ant-tabs-tab .ant-tabs-tab-btn {
+    font-size: 14px;
+  }
+  .tabs-content-header-wrap .custom-checkbox-wrap > label:not(:last-child) {
+    margin-right: 8px;
+  }
+  .custom-checkbox-wrap .ant-checkbox + span {
+    font-size: 14px;
+  }
+}
