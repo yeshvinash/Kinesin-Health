@@ -13,8 +13,8 @@ import DeleteIcon from "../../../assets/images/icons/deleteicon.svg";
 import Checkmark from "../../../assets/images/icons/checkmark.svg";
 import Consent from "../../../assets/images/icons/consent.svg";
 import { Link } from "react-router-dom";
-import "./PatientDetail.css";
 import { PatientMedications } from "../BookAppointment/PatientMedications/PatientMedications";
+import "./PatientDetail.css";
 
 const PatientDetail = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

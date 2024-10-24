@@ -291,7 +291,7 @@
 /*jignesh css */
 .h6text {
   color: #060030;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -308,6 +308,7 @@
   border: 1px solid #e5eef7;
   margin-right: 15px;
   min-width: 259px;
+  font-family: "Montserrat", sans-serif !important;
 }
 .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active {
   background-color: #ebfbf5;
@@ -403,6 +404,7 @@
   height: 60px;
   background: #fff;
   padding: 19px 20px;
+  font-family: "Montserrat", sans-serif !important;
 }
 .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .icons {
   background-color: #05c882;
@@ -431,9 +433,8 @@
   border-radius: 500px;
   background: #05c882;
   color: #fff;
-
   text-align: center;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -441,7 +442,7 @@
 }
 .extrahome-page span.ant-select-selection-item {
   color: #8d8da3;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -449,8 +450,7 @@
 }
 .extrahome-page .filed .ant-form-item .ant-row .ant-col input::placeholder {
   color: #8d8da3;
-
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -513,8 +513,7 @@
 }
 .extrahome-page span.text {
   color: #25204a;
-
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -526,8 +525,7 @@ span.ant-input-group-addon {
 }
 .h2text {
   color: #060030;
-
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -539,7 +537,7 @@ span.ant-input-group-addon {
 
 .custom-table th.ant-table-cell {
   color: #060030;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -547,8 +545,7 @@ span.ant-input-group-addon {
 }
 .custom-table .ant-table-cell {
   color: #3e3e46;
-
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -556,8 +553,7 @@ span.ant-input-group-addon {
 }
 .custom-table .ant-table-cell a {
   color: #3e3e46;
-
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -565,13 +561,16 @@ span.ant-input-group-addon {
 }
 .custom-table .ant-table-cell .label {
   text-align: center;
-  font-family: Montserrat;
-  font-size: 11.663px;
+  /* font-family: Montserrat; */
+  font-size: 11px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   padding: 7px 13px;
   border-radius: 6.998px;
+  min-width: 100px;
+  max-width: 100px;
+  display: inline-block;
 }
 span.new-patient {
   background: #e3f2ff;
@@ -592,7 +591,7 @@ span.treatment {
   background: transparent !important;
   border-top: 1px solid #ececfa;
   border-radius: 0 !important;
-  padding: 9px 16px !important;
+  padding: 16px 9px !important;
 }
 .custom-table .ant-table-content th.ant-table-cell:before {
   display: none;
@@ -628,7 +627,7 @@ span.treatment {
   margin-right: 12px;
   font-size: 15px;
 }
-.searchsection .lefts .ant-form-item-control-input-content input {
+.searchsection .lefts  .ant-input.search-input {
   fill: #fff;
   stroke-width: 0.899px;
   stroke: #b6c9db;
@@ -636,13 +635,13 @@ span.treatment {
   height: 44.04px;
   border-radius: 100px;
   padding-left: 18px;
-  padding-right: 18px;
+  padding-right: 50px;
   background: url("../../../assets/images/icons/right-arrow.svg") no-repeat;
   background-position: right 25px center;
+  font-family: "Montserrat", sans-serif !important;
 }
 .searchsection .lefts .ant-form-item-control-input-content input::placeholder {
   color: #8d8da3;
-
   font-family: Montserrat;
   font-size: 13.482px;
   font-style: normal;
@@ -657,12 +656,14 @@ span.treatment {
   align-items: center;
   border-radius: 100px;
   color: #626276;
-
   font-family: Montserrat;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 .printer:hover {
   background-color: #cdcddd !important;
@@ -713,6 +714,38 @@ span.treatment {
   border-left: 1px solid #dbdbec;
   padding-right: 16px;
 }
+
+/* Checkbox Design  Start*/
+.ant-checkbox {
+  background: var(--white);
+}
+.ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+.ant-checkbox .ant-checkbox-inner {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d2d2d2;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-input {
+  background-color: #05c882 !important;
+  border-color: #05c882 !important;
+}
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: #05c882 !important;
+}
+.ant-checkbox .ant-checkbox-inner:after {
+  width: 7px;
+  height: 12px;
+}
+/* Checkbox Design  End*/
+
 /* Responsive Design */
 @media only screen and (max-width: 1799px) {
   .health-grid-item {

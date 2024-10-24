@@ -52,6 +52,23 @@ export const SVGIcons = {
       />
     </svg>
   ),
+  DownArrowGray: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="15"
+      height="9"
+      viewBox="0 0 15 9"
+      fill="none"
+    >
+      <path
+        d="M1 1L7.4834 7.4834L13.9668 1"
+        stroke="#8D8DA3"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
   RigthArrow: (
     <svg
       width="9"
@@ -353,5 +370,47 @@ export const SVGIcons = {
       </defs>
     </svg>
   ),
+  CalendarLeftArrow: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="7"
+      height="11"
+      viewBox="0 0 7 11"
+      fill="none"
+    >
+      <path
+        d="M5.91602 1.20801L1.94464 5.28763L5.91602 9.36726"
+        stroke="black"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+  CalendarRightArrow: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="7"
+      height="11"
+      viewBox="0 0 7 11"
+      fill="none"
+    >
+      <path
+        d="M1.26416 1.20801L5.23554 5.28763L1.26416 9.36726"
+        stroke="black"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+  LeftArrow: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
+    </svg>
+  ),
 };
-

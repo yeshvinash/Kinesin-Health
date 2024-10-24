@@ -98,6 +98,10 @@ textarea:focus,
   box-shadow: none !important;
 }
 
+span{
+  font-family: "Montserrat", sans-serif !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -110,7 +114,6 @@ label {
   vertical-align: 0;
   cursor: pointer;
   font-family: "Montserrat", sans-serif !important;
-
 }
 
 a {
@@ -192,7 +195,8 @@ input[type="number"] {
 
 /* global css starts */
 
-.custom_btn {
+.custom_btn,
+.custom_btn.ant-btn {
   color: var(--white);
   background: var(--caribbean-green);
   padding: 10px 26px;
@@ -205,14 +209,19 @@ input[type="number"] {
   border: 1px solid var(--caribbean-green);
   text-align: center;
   flex-shrink: 0;
+  font-family: "Montserrat", sans-serif !important;
+  height: auto;
 }
 
 .custom_btn:hover,
 .custom_btn:focus,
-.custom_btn:active {
-  background-color: transparent;
-  color: #05c882;
-  border-color: var(--caribbean-green);
+.custom_btn:active,
+.custom_btn.ant-btn:hover,
+.custom_btn.ant-btn:focus,
+.custom_btn.ant-btn:active {
+  background-color: transparent !important;
+  color: #05c882 !important;
+  border-color: var(--caribbean-green) !important;
 }
 
 .red {

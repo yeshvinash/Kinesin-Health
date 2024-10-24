@@ -9,7 +9,7 @@ import {
   DatePicker,
   TimePicker,
 } from "antd";
-import { Image, Button, Accordion } from "react-bootstrap";
+import { Image, Button, Accordion, FloatingLabel } from "react-bootstrap";
 import Male from "../../../../assets/images/icons/male.svg";
 import Diabeties from "../../../../assets/images/icons/diabeties.svg";
 import PatientImg from "../../../../assets/images/cover/patient.jpg";
@@ -255,6 +255,113 @@ export const PatientMedications = () => {
       ),
     },
   ];
+
+  const drugColumns = [
+    {
+      title: "Trade Name",
+      dataIndex: "tradename",
+    },
+    {
+      title: "Generic Name",
+      dataIndex: "genericname",
+    },
+    {
+      title: "Manufacturer",
+      dataIndex: "manufacturer",
+    },
+    {
+      title: "Strength",
+      dataIndex: "strength",
+    },
+    {
+      title: "Pack",
+      dataIndex: "pack",
+    },
+    {
+      title: "Form",
+      dataIndex: "form",
+    },
+    {
+      title: "Cost",
+      dataIndex: "cost",
+    },
+    {
+      title: "GMS",
+      dataIndex: "gms",
+    },
+  ];
+
+  const drugData = [
+    {
+      id: 1,
+      tradename: "Amoxicillin 500MG PDR SOL/NJ ULM POA",
+      genericname: "Amoxicillin",
+      manufacturer: "Medisource",
+      strength: "500MG",
+      pack: "10VIAL",
+      form: "PDRSOLNINJ",
+      cost: "€0.00",
+      gms: "NO",
+    },
+    {
+      id: 2,
+      tradename: "BRONCONOVAG SUSP",
+      genericname: "AMOXICILLIN/BROMEHEXINE HYDROCHLORIDE",
+      manufacturer: "Ferrer",
+      strength: "500MG",
+      pack: "45ML",
+      form: "Suspension",
+      cost: "€0.00",
+      gms: "NO",
+    },
+    {
+      id: 2,
+      tradename: "FLEMOXIN EFF TABS 250MG/5ML (AMOXYCILLIN)",
+      genericname: "AMOXYCILLIN",
+      manufacturer: "Ferrer",
+      strength: "500MG",
+      pack: "45ML",
+      form: "Suspension",
+      cost: "€0.00",
+      gms: "NO",
+    },
+  ];
+
+  const [modal1Visible, setModal1Visible] = useState(false);
+  const [modal2Visible, setModal2Visible] = useState(false);
+
+  const openModal2 = () => {
+    setIsPrescriptionModalOpen(false); // Close modal 1
+    setModal2Visible(true); // Open modal 2
+  };
+
+  const closeModal2 = () => {
+    setModal2Visible(false); // Close modal 2
+    setIsPrescriptionModalOpen(true); // Re-open modal 1
+  };
+  const [selectedRowKeys, setSelectedRowKeys] = useState([]);
+  const handleRowClick = (record) => {
+    const rowKey = record.key;
+    const isSelected = selectedRowKeys.includes(rowKey);
+    setSelectedRowKeys(isSelected ? [] : [rowKey]);
+  };
+
+  const rowClassName = (record) => {
+    const rowKey = record.key;
+    return selectedRowKeys.includes(rowKey) ? "selected-row" : "";
+  };
+
+  const [focused, setFocused] = useState(false);
+
+  // Handle focus events
+  const handleFocus = () => {
+    setFocused(true);
+  };
+
+  const handleBlur = () => {
+    setFocused(false);
+  };
+
   return (
     <>
       <div className="patient-detail medications">
@@ -908,12 +1015,12 @@ export const PatientMedications = () => {
                     },
                   ]}
                 />
-                <div className="filter-text-wrap d-flex">
+                <button className="filter-btn-wrap d-flex" onClick={openModal2}>
                   <h6 className="small mb-0 text-manatee fw-500 me-5 primary-font">
                     Filter
                   </h6>
                   <Image src={FilterImg} />
-                </div>
+                </button>
               </div>
             </div>
             <div className="form-content-wrap flex-column align-items-start justify-content-between">
@@ -1113,6 +1220,71 @@ export const PatientMedications = () => {
         </Form>
       </Modal>
       {/* Add New Prescription Modal End */}
+
+      <Modal
+        title="Add New Prescription"
+        className="baseline-modal prescription-modal modal2"
+        open={modal2Visible}
+        onCancel={closeModal2}
+        footer={false}
+      >
+        <Form>
+          <div className="d-flex align-items-center drug-header-title-wrap flex-wrap">
+            <div className="grid-item mb-0">
+              <div className={`custom-input-wrap floating-label-wrap`}>
+                <input class="floating-input"  type="text" placeholder="" onKeyUp={handleFocus} />
+                <label>Name</label>
+              </div>
+              <div className="custom-input-wrap">
+                <Select
+                  defaultValue="Generic Name"
+                  suffixIcon={SVGIcons.DownArrow}
+                  options={[
+                    {
+                      value: "Generic Name",
+                      label: "Generic Name",
+                    },
+                    {
+                      value: "Trade Name",
+                      label: "Trade Name",
+                    },
+                    {
+                      value: "Manufacturer",
+                      label: "Manufacturer",
+                    },
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="btn-wrapper flex-shrink-0">
+              <Button className="custom_btn">Search</Button>
+              <Button className="custom_btn gray-btn">Clear</Button>
+            </div>
+          </div>
+          <div className="custom-table-wrapper">
+            <Table
+              dataSource={drugData}
+              columns={drugColumns}
+              pagination={false}
+              onRow={(record) => ({
+                onClick: () => handleRowClick(record),
+              })}
+              rowClassName={rowClassName}
+            />
+          </div>
+          <div className="quantity-wrap d-flex align-items-center">
+            <p className="small mb-0 fw-500 primary-font">
+              <span className="text-black fw-500">Quantity : </span>
+              <span className="fw-500 text-manatee">1</span>
+            </p>
+            <div>
+              <div className="custom-checkbox-wrap">
+                <Checkbox>Show Cheapest</Checkbox>
+              </div>
+            </div>
+          </div>
+        </Form>
+      </Modal>
     </>
   );
 };

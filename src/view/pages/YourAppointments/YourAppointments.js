@@ -15,9 +15,7 @@ const onChange = (e) => {
 const onTimeChange = (time, timeString) => {
   console.log(time, timeString);
 };
-// const handleClick = () => {
-//   <YourAppointmentsList/>
-// };
+
 export const YourAppointments = () => {
   const [selectedDiv, setSelectedDiv] = useState(null);
   const [selectedLabel, setSelectedLabel] = useState(null);

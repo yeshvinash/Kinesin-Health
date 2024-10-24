@@ -225,8 +225,17 @@
 }
 .long-term-prescriptions-wrap.patient-table-wrap
   .ant-table-wrapper
+  .ant-table-content,
+.baseline-modal.prescription-modal.modal2
+  .ant-table-wrapper
   .ant-table-content {
   overflow-x: auto;
+}
+.baseline-modal.prescription-modal.modal2
+  .custom-input-wrap
+  .ant-select-single
+  .ant-select-selection-item {
+  padding: 16px 18px 16px 0;
 }
 .long-term-prescriptions-wrap.patient-table-wrap .ant-table-wrapper table {
   border-bottom: none;
@@ -312,6 +321,12 @@
 }
 .documents-link-wrap.antibiotic-content-wrap {
   max-height: 320px;
+}
+.documents-link-wrap.antibiotic-content-wrap a {
+  padding-left: 0;
+}
+.documents-link-wrap.antibiotic-content-wrap a::after {
+  display: none;
 }
 
 .visit-history-content-wrap {
@@ -437,7 +452,7 @@
   background-color: transparent;
   box-shadow: none;
 }
-.accordion-button:not(.collapsed)::after {
+.custom-accordion-wrapper .accordion-button:not(.collapsed)::after {
   content: "Reduce";
 }
 .custom-accordion-wrapper .accordion-body {
@@ -461,13 +476,13 @@
 .custom-accordion-wrapper .accordion-button:not(.collapsed) p {
   display: none;
 }
-.baseline-modal.prescription-modal form .grid-item {
+.baseline-modal.ant-modal.prescription-modal form .grid-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   margin-bottom: 24px;
 }
-.baseline-modal.prescription-modal {
+.baseline-modal.ant-modal.prescription-modal {
   width: 888px !important;
   font-family: "Montserrat", sans-serif !important;
 }
@@ -496,10 +511,10 @@
   font-size: 16px;
 }
 
-.add-new.prescription-modal {
+.baseline-modal.add-new.prescription-modal {
   width: 755px !important;
 }
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .finish-date-checkbox.custom-checkbox-wrap
   .ant-checkbox
   .ant-checkbox-inner {
@@ -507,7 +522,7 @@
   height: 16px;
   border: 1px solid #d3e3f1;
 }
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .finish-date-checkbox.custom-checkbox-wrap
   .ant-checkbox
   + span {
@@ -515,24 +530,24 @@
   font-size: 12px;
 }
 
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .finish-date-checkbox.custom-checkbox-wrap
   .ant-checkbox
   .ant-checkbox-inner:after {
   width: 5px;
   height: 8px;
 }
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .duration-type-checkbox-wrap.custom-checkbox-wrap
   .ant-checkbox
   + span {
   font-weight: 400;
 }
 
-.baseline-modal.prescription-modal form .grid-item.filter-wrap {
+.baseline-modal.ant-modal.prescription-modal form .grid-item.filter-wrap {
   grid-template-columns: 70.5% 26%;
 }
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .custom-input-wrap.search-fliter-wrap
   .ant-select-single
   .ant-select-selector {
@@ -540,7 +555,7 @@
   font-size: 16px;
 }
 
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .ant-select-single
   .ant-select-selector
   .ant-select-selection-search {
@@ -548,20 +563,33 @@
   inset-inline-end: 125px;
 }
 
-.add-new.prescription-modal
+.baseline-modal.add-new.prescription-modal
   .custom-input-wrap.search-fliter-wrap
   .ant-select-single
   .ant-select-selection-item {
   padding: 0;
 }
 
-.filter-text-wrap {
+.filter-btn-wrap {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   border-left: 1px solid #d3e3f1;
   padding: 4px 18px 4px 16px;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border-width: 0 0 0 1px;
+  box-shadow: none;
+  align-items: center;
+}
+
+.baseline-modal.ant-modal
+  .custom-input-wrap.dosage-input-wrapper
+  .ant-select
+  .ant-select-arrow {
+  right: 10px;
 }
 .custom-rangepicker-wrapper.dosage-input-wrapper
   .ant-select-single
@@ -580,6 +608,7 @@
 } */
 .custom-rangepicker-wrapper.dosage-input-wrapper .ant-select-selector {
   border: none !important;
+  box-shadow: none !important;
 }
 .custom-rangepicker-wrapper.dosage-input-wrapper .ant-select .ant-select-arrow {
   right: 10px;
@@ -588,7 +617,200 @@
   border-right: 1px solid #d3e3f1;
   border-radius: 0px;
 }
+.custom-input-wrap.floating-label-wrap {
+  position: relative;
+}
+.custom-input-wrap.floating-label-wrap .floating-input {
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 18px;
+  height: auto;
+  min-height: auto;
+  color: #060030;
+  font-weight: 400;
+  background: var(--white);
+  border: 1px solid var(--link-water);
+  display: inline-block;
+  outline: 0;
+  height: 64px;
+  width: 100%;
+  font-weight: 500;
+}
+.custom-input-wrap.floating-label-wrap label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #8d8da3;
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: text;
+}
 
+.custom-input-wrap.floating-label-wrap input:not(:placeholder-shown) ~ label,
+.custom-input-wrap.floating-label-wrap input:focus + label {
+  top: 16px;
+  font-size: 13px;
+}
+.custom-input-wrap .floating-input:focus {
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+.baseline-modal.prescription-modal.modal2 form .grid-item {
+  grid-gap: 15px;
+}
+.baseline-modal.prescription-modal.modal2 .btn-wrapper {
+  margin-left: auto;
+}
+.baseline-modal.prescription-modal.modal2 .btn-wrapper button {
+  min-width: 135px;
+  height: 45px;
+  font-size: 18px;
+}
+.baseline-modal.prescription-modal.modal2 .btn-wrapper button:not(:last-child) {
+  margin-right: 10px;
+}
+.baseline-modal.prescription-modal.modal2 {
+  width: 1473px !important;
+}
+.drug-header-title-wrap .grid-item {
+  width: calc(100% - 323px);
+}
+.drug-header-title-wrap .custom_btn.gray-btn {
+  color: #78789b;
+  font-size: 18px;
+  font-weight: 600;
+  background: #ececfa;
+  border-color: transparent !important;
+}
+.drug-header-title-wrap .custom_btn.gray-btn:hover,
+.drug-header-title-wrap .custom_btn.gray-btn:focus,
+.drug-header-title-wrap .custom_btn.gray-btn:active {
+  color: #626276 !important;
+  background-color: #cdcddd !important;
+}
+.baseline-modal.prescription-modal.modal2 .custom-table-wrapper {
+  margin-top: 30px;
+}
+.baseline-modal.prescription-modal.modal2 .custom-table-wrapper table {
+  border: 1px solid #b6c9db;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.baseline-modal.prescription-modal.modal2 .custom-table-wrapper table tr > th {
+  background-color: transparent;
+  color: #060030;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th:nth-child(1),
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th:nth-child(2) {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th:nth-child(5),
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th:nth-child(7) {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th:nth-child(6) {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.baseline-modal.prescription-modal.modal2
+  .custom-input-wrap
+  .ant-select-single
+  .ant-select-selection-item {
+  font-weight: 500;
+  color: #060030;
+}
+
+.baseline-modal.prescription-modal.modal2 .ant-modal-footer {
+  display: none;
+}
+.baseline-modal.prescription-modal.modal2 .ant-modal-body {
+  padding: 25px 25px 18px;
+}
+
+.baseline-modal.prescription-modal.modal2 .custom-table-wrapper table tr > td {
+  border-bottom: 1px solid rgba(235, 235, 243, 0.5);
+  color: #8d8da3;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 20px;
+  word-break: break-word;
+}
+.baseline-modal.prescription-modal.modal2
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-row
+  > .ant-table-cell-row-hover {
+  background-color: rgba(235, 235, 243, 0.5);
+}
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr:last-child
+  > td {
+  border-bottom: none;
+}
+.baseline-modal.prescription-modal.modal2
+  .custom-table-wrapper
+  table
+  tr
+  > th::before {
+  display: none;
+}
+.baseline-modal.prescription-modal.modal2 .quantity-wrap {
+  margin-top: 14px;
+}
+.baseline-modal.prescription-modal.modal2
+  .quantity-wrap
+  .custom-checkbox-wrap
+  .ant-checkbox-wrapper {
+  flex-direction: row-reverse;
+}
+.baseline-modal.prescription-modal.modal2 .quantity-wrap p {
+  margin-right: 20px;
+}
+.baseline-modal.prescription-modal.modal2
+  .quantity-wrap
+  .custom-checkbox-wrap
+  .ant-checkbox
+  + span {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}
 /* Responsive Design */
 
 @media only screen and (max-width: 1799px) {
@@ -677,11 +899,25 @@
   .medications-cardbox3-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
-  .baseline-modal.prescription-modal {
+  .baseline-modal.ant-modal.prescription-modal {
     width: 700px !important;
+  }
+  .baseline-modal.prescription-modal.modal2 {
+    width: 1000px !important;
+  }
+  .baseline-modal.prescription-modal.modal2 .btn-wrapper button {
+    font-size: 14px !important;
   }
 }
 @media only screen and (max-width: 1199px) {
+  .baseline-modal.prescription-modal.modal2 .btn-wrapper {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 15px;
+  }
+  .baseline-modal.prescription-modal.modal2 form .grid-item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .custom-accordion-wrapper .accordion-button::after {
@@ -709,16 +945,27 @@
   .medications-cardbox1-wrapper > .patient-detail-card:last-child {
     grid-column: 1 / 2;
   }
+  .baseline-modal.prescription-modal.modal2 {
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .visit-history-content-wrap {
     margin-right: 0px;
   }
-  .baseline-modal.prescription-modal form .grid-item,
-  .baseline-modal.prescription-modal form .grid-item.filter-wrap {
+  .baseline-modal.ant-modal.prescription-modal form .grid-item,
+  .baseline-modal.ant-modal.prescription-modal form .grid-item.filter-wrap {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     margin-bottom: 20px;
+  }
+  .baseline-modal.prescription-modal.modal2 .custom-table-wrapper table tr > th,
+  .baseline-modal.prescription-modal.modal2
+    .custom-table-wrapper
+    table
+    tr
+    > td {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -805,6 +1052,10 @@
   .conditions-list-items-wrap ul:nth-child(2) {
     margin-left: 0px;
     margin-top: 15px;
+  }
+  .baseline-modal.prescription-modal.modal2 .btn-wrapper button {
+    height: 40px;
+    min-width: 120px;
   }
 }
 @media only screen and (max-width: 414px) {

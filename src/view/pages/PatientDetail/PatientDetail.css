@@ -829,6 +829,7 @@
 }
 .baseline-modal.ant-modal .ant-modal-close {
   color: rgba(0, 0, 0, 1);
+  top: 28px;
 }
 .baseline-modal.ant-modal .ant-modal-footer > button:first-child {
   display: none;
@@ -860,8 +861,8 @@
 
 .baseline-modal.ant-modal .ant-modal-body {
   padding: 25px 25px 40px;
-  max-height: 700px;
-  overflow-y: auto;
+  /* max-height: 700px;
+  overflow-y: auto; */
   font-family: "Montserrat", sans-serif !important;
 }
 .baseline-modal.ant-modal .ant-modal-body::-webkit-scrollbar {
@@ -1050,9 +1051,9 @@
   .baseline-modal.ant-modal {
     width: 1000px !important;
   }
-  .baseline-modal.ant-modal .ant-modal-body {
+  /* .baseline-modal.ant-modal .ant-modal-body {
     max-height: 600px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1439px) {
@@ -1184,7 +1185,7 @@
   }
   .baseline-modal.ant-modal .ant-modal-body {
     padding: 20px 20px 30px;
-    max-height: 500px;
+    /* max-height: 500px; */
   }
   .baseline-modal.ant-modal {
     width: 900px !important;

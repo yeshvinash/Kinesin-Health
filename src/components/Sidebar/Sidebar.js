@@ -15,7 +15,6 @@ import LabResults from "../../assets/images/icons/lab-results-trends.svg";
 import LabResults1 from "../../assets/images/icons/lab-results-trends1.svg";
 import MyProfile from "../../assets/images/icons/my-profile.svg";
 import MyProfile1 from "../../assets/images/icons/my-profile1.svg";
-// import  Settings from "../../assets/images/icons/settings-white.svg"
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -37,7 +36,7 @@ const Sidebar = () => {
           <div className="sidebar-links-wrapper">
             <Link
               to="/home"
-              className={`menulist ${isActive("/home") ? "active" : ""}`}
+              className={`menulist ${isActive("/") ? "active" : ""}`}
               onClick={() => handleMenuClick("home")}
             >
               <img src={home} className="imgacctive" alt="" />
@@ -46,9 +45,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${
-                isActive("/") ? "active" : ""
-              }`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={appointments} alt="" />
@@ -57,7 +54,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={messages} alt="" />
@@ -86,7 +83,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={LabResults} alt="" />
@@ -95,7 +92,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -104,7 +101,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -113,7 +110,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -122,7 +119,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -131,7 +128,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -140,7 +137,7 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/") ? "active" : ""}`}
+              className={`menulist ${isActive("") ? "active" : ""}`}
               onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={MyProfile} alt="" />
@@ -150,74 +147,6 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      {/* <div className="sidebarbg">
-        <div className="sidebarbox">
-          <Link
-            to="/allied_home"
-            className={`menulist ${isActive("/allied_home") ? "active" : ""}`}
-            onClick={() => handleMenuClick("home")}
-          >
-            <img src={home} className="imgacctive" alt="" />
-            <img src={home2} className="nonactive" alt="" />
-            <span className="sidebarmenu">Home</span>
-          </Link>
-          <Link
-            to="/patient"
-            className={`menulist ${isActive("/patient") ? "active" : ""}`}
-            onClick={() => handleMenuClick("patient")}
-          >
-            <img className="nonactive" src={patient} alt="" />
-            <img className="imgacctive" src={patient2} alt="" />
-            <span className="sidebarmenu">Appointments</span>
-          </Link>
-          <Link
-            className={`menulist ${activeItem === "orders" ? "active" : ""}`}
-            onClick={() => handleMenuClick("orders")}
-          >
-            <img className="nonactive" src={result} alt="" />
-            <img className="imgacctive" src={result2} alt="" />
-            <span className="sidebarmenu">Messages</span>
-          </Link>
-          <Link
-            to="/allied_documents"
-            className={`menulist ${
-              isActive("/allied_documents") ? "active" : ""
-            }`}
-            onClick={() => handleMenuClick("documents")}
-          >
-            <img className="nonactive" src={documents} alt="" />
-            <img className="imgacctive" src={documents2} alt="" />
-            <span className="sidebarmenu">Repeat Prescriptions</span>
-          </Link>
-          <Link
-            className={`menulist ${activeItem === "vaccine" ? "active" : ""}`}
-            onClick={() => handleMenuClick("vaccine")}
-          >
-            <img className="nonactive" src={vaccine} alt="" />
-            <img className="imgacctive" src={vaccine2} alt="" />
-            <span className="sidebarmenu"> Health Record</span>
-          </Link>
-          <Link
-            className={`menulist ${
-              activeItem === "opportunities" ? "active" : ""
-            }`}
-            onClick={() => handleMenuClick("opportunities")}
-          >
-            <img className="nonactive" src={oppor} alt="" />
-            <img className="imgacctive" src={oppor2} alt="" />
-            <span className="sidebarmenu">Lab results/ trends</span>
-          </Link>
-          <Link
-            to="/allied_sms"
-            className={`menulist ${isActive("/allied_sms") ? "active" : ""}`}
-            onClick={() => handleMenuClick("communication")}
-          >
-            <img className="nonactive" src={communication} alt="" />
-            <img className="imgacctive" src={communication2} alt="" />
-            <span className="sidebarmenu">My profile</span>
-          </Link>
-        </div>
-      </div> */}
     </>
   );
 };

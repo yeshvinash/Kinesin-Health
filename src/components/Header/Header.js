@@ -126,8 +126,8 @@ export const Header = () => {
 
   const navToggle = () => {
     const body = document.querySelector("html");
-    setUserState(!userState);
     body.classList.toggle("show-menu");
+    setUserState(!userState);
   };
 
   return (
