@@ -1,0 +1,167 @@
+.headarstyle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 11px 14px;
+  border-radius: 90px;
+  background: #ececf8;
+}
+.search_bar {
+  position: relative;
+}
+.search_bar .form-control {
+  height: 52px;
+  max-width: 248px;
+  border-radius: 26px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 40px 0px 40px;
+  background: #fff;
+  outline: none;
+  border: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.search_bar img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.hedconttoggel button {
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #060030;
+}
+.hedconttoggel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.hedconttoggel .logiconbox {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin-right: 5px;
+}
+span.navicon {
+  margin-right: 7px;
+}
+.headarstyle .nav__item a {
+  padding: 0px 18px;
+}
+.headarstyle .nav__menu {
+  gap: 0px;
+}
+.headarstyle .nav__menu li + li {
+  border-left: 1px solid #dbdbec;
+}
+/* start 01.06.23 */
+.navebg {
+  background: #f5f5fd;
+  border-radius: 46px 0px 0px 0px;
+}
+.nav.dashBnav {
+  gap: 0px;
+  padding: 0px;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* end 01.06.23 */
+
+/* start 22.06.23 */
+.nav__item.itemphon {
+  display: none;
+}
+/* end 22.06.23 */
+
+/* start 24.08.23 */
+.dropdown-menu.profiledropdown {
+  min-width: 272px;
+  margin-top: 14px !important;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  padding: 5px 20px;
+}
+.dropdown-menu.profiledropdown .profilelink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hedconttoggel button.deletebtn.profilelink {
+  padding: 0 16px;
+}
+.dropdown-menu.profiledropdown .profilelink.bdrbttom {
+  border-bottom: 1px solid #0000002e;
+  justify-content: center;
+}
+.dropdown-menu.profiledropdown li {
+  padding: 15px 0px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkimg {
+  min-width: 49px;
+  height: 49px;
+  border-radius: 100%;
+  margin-right: 12px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkimg img {
+  width: 100%;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkdetails h6 {
+  color: #3e3e46;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkdetails p {
+  color: #8d8da3;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.profilelink .dropicon {
+  min-width: 27px;
+  width: 27px;
+  margin-right: 10px;
+}
+.logiconimg {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 12px;
+}
+/* end 24.08.23 */

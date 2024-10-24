@@ -1,6 +1,67 @@
-# Getting Started with Create React App
+# web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Management
+
+We are capturing project tasks on the repo project board at the following url
+
+https://github.com/users/kinesins/projects/3
+
+Can you please update with status when you work on and complete the tasks
+
+## Standards
+
+Web project must support
+
+* Components
+* Tests
+* Internationalisation (English and Hindi)
+* Mobile support (Work on IPhone, IPad and Desktops)
+* Full modern browser support required
+* Security with JWT
+
+## Security
+
+Security will be done by accessing our auth server and it will return
+* access token on JWT
+* refresh token
+
+JWT access token will expire after 1 hour and will need to be refreshed using the refresh token
+
+### Sample Access Token
+
+Here is the same structure of the access token
+
+```
+{
+  "role": "USER",
+  "permissions": [],
+  "name": "peter king",
+  "verified": false,
+  "id": 1,
+  "tenant": 0,
+  "sub": "noel@oxfordventures.org",
+  "iat": 1681805249,
+  "exp": 1681805249
+}
+```
+
+### Sample Refresh Token
+
+Here is the same structure of the refresh token
+
+```
+{
+  "sub": "noel@oxfordventures.org",
+  "iat": 1681805249,
+  "exp": 1681805249
+}
+```
+
+
+## API Defitions
+
+API details for auth service are at https://app.swaggerhub.com/apis/NOEL_3/auth-service/v1.1
+
 
 ## Available Scripts
 
