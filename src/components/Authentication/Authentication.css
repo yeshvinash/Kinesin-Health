@@ -1,5 +1,5 @@
 .authentication-wrapper {
-  height: 100vh;
+  height: 100%;
 }
 .authentication-header {
   padding: 20px 30px;
@@ -13,7 +13,7 @@
   font-size: 14px;
 }
 .authentication-form {
-  height: inherit;
+  height: 100vh;
 }
 .authentication-form-left {
   width: 69%;
@@ -22,7 +22,6 @@
   background-size: cover;
   padding-top: 14rem;
   padding-bottom: 5rem;
-  min-height: 953px;
 }
 .authentication-form-right {
   width: calc(100% - 69%);
@@ -50,7 +49,6 @@
   padding: 18px 0;
   font-size: 18px;
   margin: 4rem 0;
-  text-align: center;
 }
 .login-platform-link-wrap > a {
   background: var(--white);
@@ -116,9 +114,6 @@
 .success-form .authentication-form-content-wrapper {
   max-width: 30%;
 }
-.verification-code-wrap {
-  margin-bottom: 18px;
-}
 .verification-code-wrap .form-control {
   /* width: 70px; */
   height: 75px;
@@ -167,37 +162,4 @@
 }
 .form-number-input.form-floating > label {
   padding-left: 60px;
-}
-
-/* input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  border: 1px solid;
-} */
-
-/* Responsive Design */
-@media only screen and (min-width: 1600px) and (max-width: 1899px) {
-  .authentication-form-left {
-    min-height: 880px;
-  }
-}
-
-@media only screen and (min-width: 1350px) and (max-width: 1599px) {
-  .authentication-form-left {
-    min-height: 700px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1349px) {
-  .authentication-form-left {
-    min-height: 650px;
-  }
-}
-
-/* @media only screen and (min-width: 1121px) and (max-width: 1279px) {
-} */
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
 }

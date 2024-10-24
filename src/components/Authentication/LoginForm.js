@@ -28,7 +28,7 @@ export const LoginForm = () => {
             <span className="text-white fw-500 me-3">
               Don’t have an account?{" "}
             </span>
-            <Link to="/signup" className="custom_btn">
+            <Link to="/" className="custom_btn">
               Sign Up
             </Link>
           </div>
@@ -37,8 +37,8 @@ export const LoginForm = () => {
           <div className="authentication-form-left ">
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap mb-5 pb-1">
-                <h1 className="h1 fw-600 text-stratos">Welcome back!</h1>
-                <span className="h5 mb-0 fw-400"> Login to your account</span>
+                <h2 className="h2 fw-600 text-stratos">Welcome back!</h2>
+                <span className="p fw-400"> Login to your account</span>
               </div>
               <Form>
                 <FloatingLabel controlId="floatingInput" label="Username">
@@ -51,7 +51,6 @@ export const LoginForm = () => {
                     placeholder="Password"
                     value={password}
                     onChange={handlePasswordChange}
-                    className="custom-password"
                   />
                   <div onClick={toggleShowPassword} className="inputicon">
                     {showPassword ? (
@@ -67,7 +66,7 @@ export const LoginForm = () => {
                 >
                   Forgot your password?
                 </Link>
-                <Link to="/login-bad-credentials" className="custom_btn w-100 login_btn">Login</Link>
+                <Button className="custom_btn w-100 login_btn">Login</Button>
                 <div className="login-platform-link-wrap">
                   <a href="javascript:void(0)" className="">
                     {SVGIcons.Email}

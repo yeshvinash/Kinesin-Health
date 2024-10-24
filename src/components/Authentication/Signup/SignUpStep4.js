@@ -55,7 +55,7 @@ export const SignUpStep4 = () => {
                 </span>
               </div>
               <Form>
-                <h3 className="small fw-600 text-stratos mb-3">
+                <h3 className="small fw-600 text-stratos">
                   Let’s Create your Login
                 </h3>
                 <FloatingLabel controlId="floatingInput" label="Email">

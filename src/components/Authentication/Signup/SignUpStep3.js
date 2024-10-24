@@ -34,7 +34,7 @@ export const SignUpStep3 = () => {
                 </span>
               </div>
               <Form>
-                  <h3 className="small fw-600 text-stratos mb-3">Your Address</h3>
+                  <h3 className="small fw-600 text-stratos">Your Address</h3>
                   <FloatingLabel controlId="floatingInput" label="Eircode">
                     <Form.Control type="text" placeholder="Noelhuk" />
                   </FloatingLabel>

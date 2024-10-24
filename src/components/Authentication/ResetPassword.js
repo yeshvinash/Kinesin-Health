@@ -28,7 +28,7 @@ export const ResetPassword = () => {
             <span className="text-white fw-500 me-3">
               Don’t have an account?{" "}
             </span>
-            <Link to="/signup" className="custom_btn">
+            <Link to="/" className="custom_btn">
               Sign Up
             </Link>
           </div>
@@ -37,20 +37,16 @@ export const ResetPassword = () => {
           <div className="authentication-form-left ">
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap mb-5 pb-1">
-                <h1 className="h1 fw-600 text-stratos">Reset Password</h1>
-                <span className="h5 mb-0 fw-400">
-                  {" "}
-                  Enter your registered email address
-                </span>
+                <h2 className="h2 fw-600 text-stratos">Reset Password</h2>
+                <span className="p fw-400"> Enter your registered email address</span>
               </div>
               <Form className="reset-form">
                 <FloatingLabel controlId="floatingInput" label="Email">
                   <Form.Control type="email" placeholder="name@example.com" />
                   <div className="inputicon">{SVGIcons.Email}</div>
                 </FloatingLabel>
-                <Link to="/create-password" className="custom_btn w-100 login_btn">
-                  Reset password
-                </Link>
+                <Button className="custom_btn w-100 login_btn">Reset password</Button>
+                
               </Form>
             </div>
           </div>

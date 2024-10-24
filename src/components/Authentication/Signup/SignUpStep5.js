@@ -33,11 +33,11 @@ export const SignUpStep5 = () => {
                   Give us some of your information to get started.
                 </span>
               </div>
-              <div className="mb-4 pb-3 verification-content-wrap">
+              <div className="mb-4 pb-3">
                 <h3 className="h3 mb-3 pb-1 fw-600 text-stratos">
                   Verify your Mobile
                 </h3>
-                <p className="text-topaz mb-0">
+                <p className="mb-0">
                   Please enter your mobile number in the box below. Once you
                   click 'Send Code' you will receive a text with a verification
                   code. Enter that code here and click 'Register' to complete

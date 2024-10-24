@@ -40,7 +40,7 @@ export const CreatePassword = () => {
             <span className="text-white fw-500 me-3">
               Don’t have an account?{" "}
             </span>
-            <Link to="/signup" className="custom_btn">
+            <Link to="/" className="custom_btn">
               Sign Up
             </Link>
           </div>
@@ -49,8 +49,8 @@ export const CreatePassword = () => {
           <div className="authentication-form-left ">
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap mb-5 pb-1">
-                <h1 className="h1 fw-600 text-stratos">Create New Password </h1>
-                <span className="h5 mb-0 fw-400">
+                <h2 className="h2 fw-600 text-stratos">Create New Password </h2>
+                <span className="p fw-400">
                   Please create your new password
                 </span>
               </div>
@@ -84,14 +84,14 @@ export const CreatePassword = () => {
                     onChange={handleConfirmPasswordChange}
                   />
                   <div onClick={toggleShowConfirmPassword} className="inputicon">
-                    {showConfirmPassword ? (
+                    {confirmPassword ? (
                       <>{SVGIcons.EyeOpen}</>
                     ) : (
                       <>{SVGIcons.EyeClose}</>
                     )}
                   </div>
                 </FloatingLabel>
-                <Link to="/success" className="custom_btn w-100 login_btn">Submit</Link>
+                <Button className="custom_btn w-100 login_btn">Submit</Button>
               </Form>
             </div>
           </div>

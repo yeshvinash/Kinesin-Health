@@ -19,7 +19,7 @@ export const AuthenticationFailed = () => {
             <span className="text-white fw-500 me-3">
               Don’t have an account?{" "}
             </span>
-            <Link to="/signup" className="custom_btn">
+            <Link to="/" className="custom_btn">
               Sign Up
             </Link>
           </div>
@@ -29,13 +29,13 @@ export const AuthenticationFailed = () => {
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap text-center">
                 <Image src={failed} className="mb-5 pb-1" />
-                <h1 className="h1 fw-600 text-stratos mb-3">
+                <h2 className="h2 fw-600 text-stratos mb-3">
                   Error 2 Factor Authentication failed
-                </h1>
-                <span className="h5 mb-0 fw-400">Please Sign in Again</span>
+                </h2>
+                <span className="p">Please Sign in Again</span>
               </div>
               <Form>
-                <Link to="/login" className="custom_btn w-100 login_btn">Sign In</Link>
+                <Button className="custom_btn w-100 login_btn">Sign In</Button>
               </Form>
             </div>
           </div>

@@ -19,7 +19,7 @@ export const Success = () => {
             <span className="text-white fw-500 me-3">
               Don’t have an account?{" "}
             </span>
-            <Link to="/signup" className="custom_btn">
+            <Link to="/" className="custom_btn">
               Sign Up
             </Link>
           </div>
@@ -29,8 +29,8 @@ export const Success = () => {
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap text-center">
                 <Image src={success} className="mb-5 pb-1"/>
-                <h1 className="h1 fw-600 text-stratos mb-3">Success</h1>
-                <span className="h5 mb-0 fw-400">
+                <h2 className="h2 fw-600 text-stratos mb-3">Success</h2>
+                <span className="p">
                   Your password has been successfully reset. you can check your
                   email for reset link.
                 </span>
