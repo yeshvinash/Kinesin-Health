@@ -1,28 +1,114 @@
-.sidebarbox {
-  background: #05c882;
-  border-radius: 25px;
-  width: 86px;
+/* New Style */
+.sidebar {
   position: fixed;
-  left: 15px;
-  top: 110px;
-  height: 620px;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 0px;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 86px;
+  background-color: var(--white);
+  padding: 28px 14px 28px 12px;
 }
-
-.sidebarbox .menulist {
+.sidebar-links-wrapper {
+  background: var(--caribbean-green);
+  border-radius: 18px;
+  padding: 22px 8px;
+}
+.menulist {
   width: 42px;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  cursor: pointer;
 }
-.sidebarbox .menulist.active::after {
+.menulist:not(:last-child) {
+  margin-bottom: 18px;
+}
+.menulist.active {
+  background: #fff;
+}
+.menulist.active::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 3px;
+  height: 28px;
+  background: #05c882;
+  transform: rotate(-180deg);
+  border-radius: 9px 0px 0px 9px;
+}
+
+.sidebarmenu {
+  left: 60px;
+  position: absolute;
+  background: #05c882;
+  height: 50px;
+  padding: 0px 0px;
+  color: #fff;
+  font-size: 0px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0px 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  z-index: -1;
+  white-space: nowrap;
+}
+.menulist:hover .sidebarmenu {
+  left: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 25px 0px 25px;
+  font-size: 16px;
+  transition: all ease 0.4s;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.imgacctive {
+  display: none;
+}
+.active .nonactive {
+  display: none;
+}
+.active .imgacctive {
+  display: block;
+}
+
+.nav__link.active .navicon {
+  background: #fff;
+}
+
+/* New Style */
+
+/* .sidebarbox {
+  background: #05c882;
+  border-radius: 25px;
+  width: 86px;
+  position: fixed;
+  left: 15px;
+  top: 110px;
+  height: 445px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0px;
+} */
+
+/* .sidebarbox .menulist {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+} */
+/* .sidebarbox .menulist.active::after {
   content: "";
   position: absolute;
   left: -15px;
@@ -31,24 +117,14 @@
   background: #05c882;
   transform: translateX(-50%);
   border-radius: 5px;
-}
-.dashBnav::after {
-  content: "";
-  position: fixed;
-  left: 0px;
-  top: 0;
-  background: #fff;
-  height: 100vh;
-  min-width: 8%;
-  z-index: -1;
-}
+} */
 
 /* start 01.06.23 */
-.dashBcontbody {
-  padding: 0px 20px;
+/* .dashBcontbody {
+  padding: 0px 30px;
   background: #f5f5fd;
   margin-left: auto;
-  max-width: 94%;
+  max-width: 92%;
 }
 .dashBcontbody h3 {
   font-size: 30px;
@@ -126,11 +202,11 @@ button.react-calendar__tile.react-calendar__month-view__days__day.react-calendar
   color: #cacaca;
   font-weight: 700;
   font-size: 16px;
-}
+} */
 /* end 01.06.23 */
 
 /* start 06.06.23 */
-.smallclander .react-calendar {
+/* .smallclander .react-calendar {
   width: 100%;
 }
 .smallclander .react-calendar__month-view__weekdays__weekday {
@@ -182,17 +258,17 @@ button.react-calendar__tile.react-calendar__tile--active.react-calendar__tile--r
 }
 .bigclander .rbc-event-label {
   display: none;
-}
+} */
 /* end 06.06.23 */
 
 /* start 07.06.23 */
-.smallclander {
+/* .smallclander {
   min-width: 34%;
-}
+} */
 /* end 07.06.23 */
 
 /* start 24.06.23 */
-.sidebarmenu {
+/* .sidebarmenu {
   left: 0;
   position: absolute;
   background: #05c882;
@@ -225,11 +301,11 @@ button.react-calendar__tile.react-calendar__tile--active.react-calendar__tile--r
 }
 .sidebarbox .menulist.active {
   background: #fff;
-}
+} */
 /* end 24.06.23 */
 
 /* start 07.08.23 */
-.imgacctive {
+/* .imgacctive {
   display: none;
 }
 .active .nonactive {
@@ -240,5 +316,44 @@ button.react-calendar__tile.react-calendar__tile--active.react-calendar__tile--r
 }
 .nav__link.active .navicon {
   background: #fff;
-}
+} */
 /* end 07.08.23 */
+
+@media only screen and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .menulist.active::after {
+    display: none;
+  }
+  .menulist {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .menulist.active {
+    background: transparent;
+  }
+  .menulist-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    background: transparent;
+  }
+  .menulist.active .menulist-icon-wrap {
+    background: #fff;
+  }
+}

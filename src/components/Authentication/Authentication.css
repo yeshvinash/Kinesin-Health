@@ -1,5 +1,5 @@
 .authentication-wrapper {
-  height: 100%;
+  height: 100vh;
 }
 .authentication-header {
   padding: 20px 30px;
@@ -9,19 +9,20 @@
   width: 100%;
   z-index: 99;
 }
+
 .authentication-header span {
   font-size: 14px;
 }
 .authentication-form {
-  height: 100vh;
+  height: inherit;
 }
 .authentication-form-left {
   width: 69%;
   background: #fff url("../../assets/images/cover/authentication-bg.png")
     no-repeat;
   background-size: cover;
-  padding-top: 14rem;
-  padding-bottom: 5rem;
+  padding: 14rem 20px 5rem;
+  min-height: 953px;
 }
 .authentication-form-right {
   width: calc(100% - 69%);
@@ -49,6 +50,7 @@
   padding: 18px 0;
   font-size: 18px;
   margin: 4rem 0;
+  text-align: center;
 }
 .login-platform-link-wrap > a {
   background: var(--white);
@@ -114,6 +116,9 @@
 .success-form .authentication-form-content-wrapper {
   max-width: 30%;
 }
+.verification-code-wrap {
+  margin-bottom: 18px;
+}
 .verification-code-wrap .form-control {
   /* width: 70px; */
   height: 75px;
@@ -162,4 +167,136 @@
 }
 .form-number-input.form-floating > label {
   padding-left: 60px;
+}
+.success-img {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  border: 1px solid;
+} */
+
+/* Responsive Design */
+@media only screen and (max-width: 1799px) {
+  .authentication-form-left {
+    min-height: 880px;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .authentication-form-left {
+    min-height: 700px;
+  }
+  .authentication-header {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .authentication-header .header-logo {
+    max-width: 130px;
+  }
+  .authentication-header .custom_btn {
+    font-size: 14px;
+    padding: 8px 22px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .authentication-form-left {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .authentication-header {
+    padding: 15px;
+  }
+  .authentication-title-wrap h1 {
+    font-size: 34px;
+  }
+  .authentication-title-wrap .h5 {
+    font-size: 16px;
+  }
+  .success-form .authentication-form-content-wrapper {
+    max-width: 50%;
+  }
+  .verification-code-wrap .form-control {
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .authentication-form-content-wrapper,
+  .failed-authentication-form .authentication-form-content-wrapper,
+  .factor-authentication-form .authentication-form-content-wrapper {
+    max-width: 60%;
+  }
+  .authentication-header {
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .authentication-form-content-wrapper,
+  .failed-authentication-form .authentication-form-content-wrapper,
+  .factor-authentication-form .authentication-form-content-wrapper {
+    max-width: 100%;
+  }
+  .authentication-form .login_btn {
+    padding: 14px 0;
+    font-size: 16px;
+    margin: 37px 0 50px;
+  }
+  .authentication-form .forgot-password-link,
+  .click-here-links-wrap span {
+    font-size: 14px;
+  }
+
+  .authentication-header .custom_btn {
+    font-size: 12px;
+  }
+  .success-form .authentication-form-content-wrapper {
+    max-width: 100%;
+  }
+  .verification-code-wrap .col:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .authentication-title-wrap h1 {
+    font-size: 25px;
+  }
+  .login-platform-link-wrap > a {
+    padding: 16px;
+    font-size: 14px;
+  }
+  .inputicon {
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .authentication-header .header-logo {
+    max-width: 110px;
+  }
+  .verification-code-wrap .form-control {
+    height: 50px;
+    font-size: 24px;
+  }
+  .authentication-title-wrap .h5 {
+    font-size: 14px;
+  }
+  .form-number-input.form-floating > label {
+    padding-left: 47px;
+  }
+  .form-number-input .inputicon {
+    left: 15px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .authentication-title-wrap h1 {
+    font-size: 24px;
+  }
 }

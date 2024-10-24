@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import AuthenticationLogo from "../../assets/images/logo/authentication-logo.svg";
-import { Button, FloatingLabel, Form, Image } from "react-bootstrap";
+import { FloatingLabel, Form, Image } from "react-bootstrap";
 import StarsImg from "../../assets/images/icons/stars.svg";
-import "./Authentication.css";
 import { SVGIcons } from "../Data/SVGIcons";
+import AuthenticationHeader from "./AuthenticationHeader";
+import "./Authentication.css";
 
 export const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -20,25 +20,13 @@ export const LoginForm = () => {
   return (
     <>
       <section className="authentication-wrapper">
-        <div className="d-flex align-items-center justify-content-between authentication-header">
-          <Link to="/login">
-            <img src={AuthenticationLogo} />
-          </Link>
-          <div className="d-flex align-items-center">
-            <span className="text-white fw-500 me-3">
-              Don’t have an account?{" "}
-            </span>
-            <Link to="/" className="custom_btn">
-              Sign Up
-            </Link>
-          </div>
-        </div>
+        <AuthenticationHeader />
         <section className="authentication-form d-flex">
           <div className="authentication-form-left ">
             <div className="authentication-form-content-wrapper">
               <div className="authentication-title-wrap mb-5 pb-1">
-                <h2 className="h2 fw-600 text-stratos">Welcome back!</h2>
-                <span className="p fw-400"> Login to your account</span>
+                <h1 className="h1 fw-600 text-stratos">Welcome back!</h1>
+                <span className="h5 mb-0 fw-400"> Login to your account</span>
               </div>
               <Form>
                 <FloatingLabel controlId="floatingInput" label="Username">
@@ -51,6 +39,7 @@ export const LoginForm = () => {
                     placeholder="Password"
                     value={password}
                     onChange={handlePasswordChange}
+                    className="custom-password"
                   />
                   <div onClick={toggleShowPassword} className="inputicon">
                     {showPassword ? (
@@ -66,7 +55,12 @@ export const LoginForm = () => {
                 >
                   Forgot your password?
                 </Link>
-                <Button className="custom_btn w-100 login_btn">Login</Button>
+                <Link
+                  to="/login-bad-credentials"
+                  className="custom_btn w-100 login_btn"
+                >
+                  Login
+                </Link>
                 <div className="login-platform-link-wrap">
                   <a href="javascript:void(0)" className="">
                     {SVGIcons.Email}
@@ -84,7 +78,7 @@ export const LoginForm = () => {
               </Form>
             </div>
           </div>
-          <div className="authentication-form-right d-flex flex-column justify-content-end">
+          <div className="authentication-form-right d-none d-xl-flex flex-column justify-content-end">
             <div className="authentication-form-right-content-wrap">
               <Image src={StarsImg} className="mb-3" />
               <p className="text-white mb-3 pb-2">
