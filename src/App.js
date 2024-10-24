@@ -1,31 +1,29 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Footer } from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Features from "./Pages/Features/Features";
-import { Solutions } from "./Pages/Solutions/Solutions";
-import { Support } from "./Pages/Support/Support";
+import { Routes, Route, Navigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { LoginForm } from "./components/Authentication/LoginForm";
+import { Signup } from "./components/Authentication/Signup/Signup";
+import { LoginBadCredentials } from "./components/Authentication/LoginBadCredentials";
+import { ResetPassword } from "./components/Authentication/ResetPassword";
+import { CreatePassword } from "./components/Authentication/CreatePassword";
+import { Success } from "./components/Authentication/Success";
+import { FactorAuthentication } from "./components/Authentication/FactorAuthentication";
+import { AuthenticationFailed } from "./components/Authentication/AuthenticationFailed";
+import RouteView from "./route";
 import "./App.css";
-import { Home } from "./Pages/Home/Home";
-import { Pricing } from "./Pages/Pricing/Pricing";
-import { WhyKinesin } from "./Pages/WhyKinesin/WhyKinesin";
 
 function App() {
   return (
-    <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"/why-kinesin"} element={<WhyKinesin />} />
-          <Route path={"/features"} element={<Features />} />
-          <Route path={"/solutions"} element={<Solutions />} />
-          <Route path={"/pricing"} element={<Pricing />} />
-          <Route path={"/support"} element={<Support />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
+    <Routes>
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<LoginForm />} />
+      <Route path="/login-bad-credentials" element={<LoginBadCredentials />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
+      <Route path="/create-password" element={<CreatePassword />} />
+      <Route path="/success" element={<Success />} />
+      <Route path="/authentication-failed" element={<AuthenticationFailed />} />
+      <Route path="/factor-authentication" element={<FactorAuthentication />} />
+      <Route path="*" element={<RouteView />} />
+    </Routes>
   );
 }
 

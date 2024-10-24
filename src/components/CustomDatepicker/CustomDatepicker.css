@@ -1,0 +1,41 @@
+/* DatePicker Style */
+.custom-date-picker {
+    position: relative;
+  }
+  .custom-date-picker .ant-picker {
+    width: 100%;
+    padding: 23px 20px;
+    height: 74px;
+    font-size: 20px;
+    border-radius: 12px;
+    background: var(--white);
+    border: 1px solid var(--link-water);
+  }
+  .custom-date-picker .ant-picker .ant-picker-input > input {
+    color: #060030;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .custom-date-picker .floating-label {
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    color: var(--manatee);
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
+  }
+  .custom-date-picker.ant-picker-focused {
+    box-shadow: 0 0 0 0.2rem rgb(5 200 130 / 25%);
+  }
+  .custom-date-picker.focused .floating-label,
+  .custom-date-picker.ant-picker-focused .floating-label {
+    top: 20px;
+    font-size: 13px;
+  }
+  /* DatePicker Style */

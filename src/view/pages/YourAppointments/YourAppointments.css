@@ -1,0 +1,194 @@
+.filter-box-wrapper {
+  width: 62.7rem;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #f2f2fa;
+  background: #fafafd;
+}
+.filter-box-wrapper .title-wrap {
+  padding: 20px 21px;
+  border-bottom: 1px solid #f2f2fa;
+}
+.filter-box-wrapper .datepicker-wrap {
+  padding: 15px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  /* border-bottom: 1px solid #f2f2fa; */
+}
+.filter-box-wrapper .ant-picker {
+  /* width: 126px;*/
+  height: 50px;
+  background: #fff;
+  border: 1px solid #d3e3f1;
+}
+.filter-box-wrapper .custom-checkbox-wrap {
+  padding: 20px 21px 24px;
+}
+
+.filter-box-wrapper .custom-checkbox-wrap > label:not(:last-child) {
+  margin-right: 0px;
+  margin-bottom: 15px;
+}
+
+.appointments-tabs-wrap {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 6.5rem;
+  width: calc(100% - 62.7rem);
+}
+
+.appointments-tabs {
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #060030;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.appointments-tabs.confirm-selected {
+  border-color: #05c882;
+}
+.appointments-tabs.past-selected {
+  border-color: #f6ba06;
+}
+.appointments-tabs.cancelled-selected {
+  border-color: #ff2a2a;
+}
+.confirm-dot,
+.past-dot,
+.cancel-dot {
+  position: relative;
+}
+.confirm-dot::after,
+.past-dot::after,
+.cancel-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.confirm-dot::after {
+  background-color: #05c882;
+}
+
+.past-dot::after {
+  background-color: #f6ba06;
+}
+.cancel-dot::after {
+  background-color: #ff2a2a;
+}
+.appointments-list-wrapper {
+  margin-top: 30px;
+  /* width: calc(100% - 300px); */
+  /* margin-left: 6rem; */
+}
+.appointments-list-wrapper > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+.appointments-list-wrapper .ant-table-thead {
+  display: none;
+}
+.appointments-list-wrapper .ant-table-wrapper table {
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 16px;
+}
+
+.appointments-list-wrapper .ant-table-wrapper tr > td {
+  border-bottom: none;
+  border-radius: 12px;
+  position: relative;
+  /* border-right: 1px solid #d3e3f1; */
+}
+
+.appointments-list-wrapper .ant-table-wrapper tr > td:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d3e3f1;
+  width: 1px;
+  height: 32px;
+}
+
+/* .appointments-list-wrapper .ant-table-tbody > tr:hover {
+  background-color: transparent !important;
+}
+.appointments-list-wrapper .ant-table-tbody > tr > td {
+  background-color: transparent;
+} */
+
+.appointments-list-wrapper .ant-table-wrapper table .confirm-dot::after {
+  right: unset;
+  left: -16px;
+}
+.appointments-list-wrapper
+  .ant-table-wrapper
+  .ant-table-tbody
+  .ant-table-row
+  > .ant-table-cell-row-hover {
+  background: #fff !important;
+}
+
+.appointments-timing-wrapper {
+  width: 300px;
+  flex-shrink: 0;
+}
+.appointments-schdeule-wrapper {
+  width: calc(100% - 300px);
+  margin-left: 17rem;
+}
+.appointments-schdeule-wrapper .bottom-border {
+  border-bottom: 1px solid #d3e3f1;
+}
+.schedule-text-label {
+  color: #8d8da3;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  display: block;
+}
+.appointments-schdeule-inner {
+  max-width: 54.2%;
+  margin-bottom: 3.7rem;
+}
+.group-wrapper {
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  background: #fff;
+  padding: 25px 26px;
+}
+.appointments-schdeule-input:not(:first-child) {
+  margin-top: 25px;
+}
+.appointments-schdeule-input:not(:last-child) {
+  border-bottom: 1px solid #d3e3f1;
+  padding-bottom: 27px;
+}
+.amount-wrap {
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #e7fff6;
+  margin: 25px 0 30px;
+}
+.status-wrap .confirm-dot::after {
+  right: unset;
+  left: 0px;
+}
+.appointments-schdeule-wrapper .dashboard-btn-wrap {
+  margin: 4rem 0 33px;
+}
