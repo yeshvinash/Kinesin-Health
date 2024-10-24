@@ -1,0 +1,150 @@
+.custom-steps-wizard {
+  display: flex;
+}
+.custom-steps-wizard-content-wrap {
+  width: 69%;
+  background: #fff url("../../../assets/images/cover/signup-bg.png") no-repeat;
+  background-size: cover;
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+  min-height: 95.3rem;
+}
+.custom-steps-wizard-items-wrap {
+  width: calc(100% - 69%);
+  background: url("../../../assets/images/cover/signup.png") no-repeat;
+  background-size: cover;
+}
+::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.custom-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+.ant-checkbox {
+  background: var(--white);
+}
+.custom-checkbox-wrap .ant-checkbox .ant-checkbox-inner {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d3e3f1;
+  border-radius: 5px;
+}
+.custom-checkbox-wrap .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+  border: 2px solid #d3e3f1;
+}
+.custom-checkbox-wrap .ant-checkbox-checked .ant-checkbox-inner,
+.custom-checkbox-wrap.ant-checkbox-checked .ant-checkbox-input {
+  background-color: #05c882 !important;
+  border-color: #05c882 !important;
+}
+.custom-checkbox-wrap .ant-checkbox + span {
+  color: #8d8da3;
+  font-size: 16px;
+  font-weight: 500;
+}
+.custom-checkbox-wrap .ant-checkbox .ant-checkbox-inner:after {
+  width: 7px;
+  height: 12px;
+}
+.custom-checkbox-wrap > label:not(:last-child) {
+  margin-right: 16px;
+}
+.verification-content-wrap p {
+  /* font-size: 14px; */
+  line-height: 1.4;
+  padding-right: 25px;
+}
+.custom-checkbox-wrap .ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif !important;
+}
+.profile-box-wrap .custom-checkbox-wrap .ant-checkbox + span {
+  color: #060030;
+}
+.signup-form-wrapper .authentication-title-wrap img {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+/* Responsive media query */
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+}
+@media only screen and (max-width: 1199px) {
+  .authentication-form-content-wrapper {
+    max-width: 60%;
+  }
+  .custom-steps-wizard-content-wrap {
+    padding-top: 100px;
+  }
+  /* .custom-steps-wizard .ant-steps {
+    padding-top: 100px;
+    padding-left: 30px;
+  } */
+}
+@media only screen and (max-width: 991px) {
+  .authentication-form-content-wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .custom-steps-wizard-content-wrap {
+    padding-top: 50px;
+  }
+  .custom-steps-wizard-content-wrap,
+  .custom-steps-wizard-items-wrap {
+    width: 100%;
+  }
+  .custom-steps-wizard-content-wrap {
+    order: 2;
+    max-height: 670px;
+    min-height: 670px;
+    overflow-y: auto;
+  }
+  .custom-steps-wizard-items-wrap {
+    order: 1;
+    max-height: 210px;
+    min-height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .signup-form-wrapper .authentication-form-content-wrapper h3 {
+    font-size: 24px;
+  }
+  .account-checkbox-wrapper h5 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .signup-form-wrapper form {
+    margin-top: 30px;
+  }
+  .verification-content-wrap p {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .signup-form-wrapper .authentication-form-content-wrapper h3 {
+    font-size: 18px;
+  }
+  .account-checkbox-wrapper h5 {
+    font-size: 16px;
+  }
+  .verification-content-wrap p {
+    font-size: 12px;
+  }
+  .signup-form-wrapper .authentication-title-wrap img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+}
