@@ -1,0 +1,377 @@
+.pick-service-wrap .pickup {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px;
+  border: 1px solid transparent;
+}
+.pick-service-wrap .pickup:not(:last-child) {
+  margin-right: 15px;
+}
+.pick-service-wrap .selectable {
+  color: #060030;
+  border-color: #d3e3f1;
+}
+
+.pick-service-wrap .selected {
+  color: #05c882;
+  border-color: #05c882;
+}
+.authentication-title-wrap.space-bottom {
+  margin-bottom: 5rem;
+}
+
+.pick-doctor-wrap {
+  max-width: 54.2%;
+}
+.pick-doctor-wrap .pickup-doctor {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  background: #fff;
+  padding: 14px 15px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.pick-doctor-wrap .pickup-doctor img {
+  object-fit: cover;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+.pick-doctor-wrap .selectable {
+  color: #060030;
+  border-color: #d3e3f1;
+}
+
+.pick-doctor-wrap .selected {
+  color: #05c882;
+  border-color: #05c882;
+}
+.pick-doctor-wrap .pickup-doctor:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.book-an-appointment .resapp-steps-wizard-items-wrap {
+  width: 240px;
+}
+.book-an-appointment .resapp-steps-wizard-content-wrap {
+  width: calc(100% - 240px);
+  padding-left: 23rem;
+}
+.book-an-appointment .custom-checkbox-wrap .ant-checkbox + span {
+  color: var(--stratos);
+}
+
+.add-dependant-link {
+  padding: 14px 15px;
+  background-color: #eaeafa;
+  color: #5d35e9;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 500px;
+  flex-shrink: 0;
+}
+.add-dependant-link svg {
+  margin-right: 10px;
+}
+.custom-alert-box {
+  max-width: 300px;
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+  /* display: none; */
+}
+.custom-alert-box .ant-alert-error .ant-alert-icon {
+  position: relative;
+}
+.custom-alert-box .ant-alert-error {
+  border-radius: 12px;
+  border: 1px solid #f2f2fa;
+  background: #ff4850;
+  padding: 15px 20px;
+}
+.custom-alert-box .ant-alert-message,
+.custom-alert-box .ant-alert-description {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}
+.custom-alert-box .ant-alert-description {
+  font-weight: 500;
+  font-size: 13px;
+}
+.custom-alert-box .ant-alert-message {
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.custom-alert-box .ant-alert-error .ant-alert-icon::after {
+  content: "";
+  position: absolute;
+  background: url("../../../assets//images//icons/warning.svg") no-repeat center
+    left;
+  width: 22px;
+  height: 22px;
+  top: 2px;
+  left: 0;
+}
+.custom-alert-box .ant-alert-error .ant-alert-icon svg {
+  display: none;
+}
+
+.payments-wrap > img:not(:last-child) {
+  margin-right: 14px;
+}
+.payment-card-details-wrapper {
+  margin-top: 4rem;
+}
+.payment-card-details-wrapper .card-title {
+  margin-bottom: 18px;
+  display: inline-block;
+}
+.pick-doctor-wrap {
+  max-width: 100%;
+}
+.your-summary-wrap {
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  background: #fff;
+  padding: 24px 20px 28px;
+  margin-left: 7rem;
+}
+.your-summary-list span {
+  font-size: 15px;
+  /* font-weight: 500; */
+}
+.your-summary-details-wrap {
+  border-radius: 12px;
+  border: 1px solid #d3e3f1;
+  background: #fafafd;
+  padding: 23px 25px;
+}
+.your-summary-list:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.your-summary-list .summary-title {
+  color: #606065;
+  font-weight: 400;
+}
+.your-summary-list .summary-info {
+  text-align: end;
+  max-width: 60%;
+}
+.your-summary-list .dashboard-btn-wrap {
+  padding: 0 24px;
+}
+.payment-box-wrap {
+  margin-right: 4rem;
+}
+.payment-card-wrapper {
+  max-width: 91%;
+}
+
+.payment-card-wrapper .swiper {
+  padding-bottom: 50px;
+}
+.payment-card-wrapper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(193, 193, 241, 30%);
+  opacity: 1;
+  background-color: #fff;
+}
+.payment-card-wrapper
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #c1c1f1;
+  border: 1px solid transparent;
+}
+
+.dependant-input {
+  display: none;
+}
+.practice-detail-form.active .dependant-input {
+  display: block;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1799px) {
+  .book-an-appointment .resapp-steps-wizard-content-wrap {
+    padding-left: 12rem;
+  }
+  .your-summary-wrap {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .pick-service-wrap .pickup {
+    font-size: 14px;
+    padding: 16px 30px;
+  }
+  .pick-doctor-wrap .pickup-doctor {
+    font-size: 14px;
+    padding: 12px 15px;
+    height: 55px;
+  }
+  .authentication-title-wrap h3 {
+    font-size: 20px;
+  }
+  .time-grid-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .resapp-steps-wrapper .dashboard-btn-wrap .custom_btn {
+    font-size: 16px;
+    padding: 15px 4.5rem;
+    min-width: 160px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .your-summary-wrap {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .book-an-appointment .resapp-steps-wizard-items-wrap {
+    width: 100%;
+  }
+  .book-an-appointment .resapp-steps-wizard-content-wrap {
+    width: 100%;
+    /* padding-top: 30px; */
+    padding-left: 0;
+  }
+  .payment-box-wrap {
+    margin-right: 0;
+  }
+  .your-summary-wrap {
+    margin-left: 0;
+  }
+  .payment-card-wrapper {
+    max-width: 75%;
+  }
+  .payment-card-details-wrapper .card-title,
+  .payment-card-wrapper .h5 {
+    font-size: 18px;
+  }
+
+  .time-grid-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .custom-alert-box {
+    /* max-width: 300px; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .time-grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resapp-steps-wrapper .dashboard-btn-wrap .custom_btn {
+    font-size: 14px;
+    padding: 12px 4.5rem;
+    min-width: 140px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .reschedule-appointment.book-an-appointment .custom-steps-wizard .ant-steps {
+    max-width: 70%;
+  }
+  .pick-service-wrap span {
+    width: 100%;
+  }
+  .pick-service-wrap .pickup:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .pick-service-wrap .pickup {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+  .pick-doctor-wrap .pickup-doctor {
+    font-size: 16px;
+    height: 58px;
+  }
+  .resapp-steps-wizard-content-wrap .custom-checkbox-wrap .ant-checkbox + span {
+    font-size: 14px;
+  }
+  .add-dependant-link {
+    padding: 12px 13px;
+    font-size: 12px;
+  }
+  .add-dependant-link svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+  .practice-details-form-step {
+    padding-top: 0px;
+  }
+  .payment-card-wrapper {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .your-summary-details-wrap {
+    padding: 20px;
+  }
+  .your-summary-list span {
+    font-size: 12px;
+  }
+  .reschedule-appointment .custom-steps-wizard .ant-steps {
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .reschedule-appointment.book-an-appointment .custom-steps-wizard .ant-steps {
+    max-width: 90%;
+  }
+  .resapp-steps-wizard-content-wrap .custom-checkbox-wrap .ant-checkbox + span {
+    font-size: 12px;
+  }
+  .add-dependant-link {
+    padding: 11px 10px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .payment-card-details-wrapper .card-title,
+  .payment-card-wrapper .h5 {
+    font-size: 16px;
+  }
+  .practice-details-title-wrap {
+    flex-wrap: wrap;
+  }
+  .add-dependant-link {
+    margin-top: 10px;
+  }
+  .reschedule-appointment.book-an-appointment .custom-steps-wizard .ant-steps {
+    max-width: 100%;
+  }
+  .authentication-title-wrap h3 {
+    font-size: 16px;
+    margin-bottom: 12px !important;
+  }
+  .pick-doctor-wrap .pickup-doctor {
+    font-size: 14px;
+    padding: 12px 15px;
+    height: 55px;
+  }
+  .pick-service-wrap .pickup {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+  .your-summary-list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .custom-alert-box {
+    max-width: 250px;
+  }
+}

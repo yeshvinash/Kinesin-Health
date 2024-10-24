@@ -150,7 +150,7 @@ export const Header = () => {
                 </li>
                 <li className="nav__item itemphon">
                   <Link
-                    to="/home"
+                    to="/appointments"
                     className={`menulist ${
                       isActive("/appointments") ? "active" : ""
                     }`}
@@ -233,7 +233,7 @@ export const Header = () => {
                 </li>
                 <li className="nav__item itemphon">
                   <Link
-                    to="/home"
+                    to="/profile"
                     className={`menulist ${
                       isActive("/profile") ? "active" : ""
                     }`}

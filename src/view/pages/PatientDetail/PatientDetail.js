@@ -334,6 +334,7 @@ const PatientDetail = () => {
         Patient Detail Summary
       </h2>
       <div className="patient-detail-cardbox-container-1">
+        {/* <div className="d-flex flex-column"> */}
         <div className="patient-detail-card bg patient-detail-summary-wrap">
           <div className="patient-header-wrap">
             <div className="d-flex align-items-center flex-sm-nowrap flex-wrap justify-content-center justify-content-sm-start">
@@ -413,6 +414,52 @@ const PatientDetail = () => {
             </div>
           </div>
         </div>
+        {/* <div className="reason-visit-wrap">
+            <div className="d-flex align-items-center mb-2">
+              <Image src={visit} className="me-3" />
+              <h5 className="h5 fw-600 text-royal-blue mb-0">
+                Reason for visit:
+              </h5>
+            </div>
+            <p className="fw-500 mb-0">
+              Contrary to popular belief, Lorem Ipsum is not simplytext roots in
+              a piece of classical Latin literature from 45 BC, making
+            </p>
+          </div> */}
+        {/* </div> */}
+        {/* <div className="patient-detail-card bg">
+          <div className="d-flex align-items-center justify-content-between documents-title-wrap">
+            <h4 className="h4 fw-600 text-stratos mb-0">All Documents</h4>
+            <Button className="transaparent-btn d-flex align-items-center justify-content-end">
+              <span className="d-inline-block me-3">Add new</span>
+              <Image src={PlusIcon} />
+            </Button>
+          </div>
+          <div className="documents-link-wrap">
+            <Link className="d-flex align-items-center justify-content-between">
+              <span className="text-ellipsis me-3">MRI Back - Mary Kenny</span>
+              {SVGIcons.Documents}
+            </Link>
+            <Link className="d-flex align-items-center justify-content-between">
+              <span className="text-ellipsis me-3">
+                Patient submitted photo - Mary Kenny
+              </span>
+              {SVGIcons.Documents}
+            </Link>
+            <Link className="d-flex align-items-center justify-content-between">
+              <span className="text-ellipsis me-3">
+                GP Referral Letter - Mary Kenny
+              </span>
+              {SVGIcons.Documents}
+            </Link>
+            <Link className="d-flex align-items-center justify-content-between">
+              <span className="text-ellipsis me-3">
+                Patient submitted photo
+              </span>
+              {SVGIcons.Documents}
+            </Link>
+          </div>
+        </div> */}
         <div className="patient-detail-card bg patients-tasks-wrap">
           <div className="d-flex align-items-center justify-content-between documents-title-wrap">
             <h4 className="h4 fw-600 text-stratos mb-0">Patients Tasks</h4>
@@ -621,6 +668,180 @@ const PatientDetail = () => {
           </div>
         </div>
       </div>
+      {/* <div className="patient-detail-cardbox-container-2">
+        <div className="patient-detail-card bg visit-history">
+          <div className="d-flex align-items-center justify-content-between documents-title-wrap">
+            <h4 className="h4 fw-600 text-stratos mb-0">Visit History</h4>
+            <Button className="transaparent-btn d-flex align-items-center justify-content-end">
+              <span className="d-inline-block me-3">Add note</span>
+              <Image src={PlusIcon} />
+            </Button>
+          </div>
+          <div className="d-flex mt-4 pt-3 flex-wrap flex-md-nowrap">
+            <div className="visit-history-content-wrap">
+              <p className=" fw-500">
+                Contrary to popular belief, Lorem Ipsum is not simpandom text.
+                It has roots in a piece of classical Latiniter nature from 45
+                BC, ma king it over 2000 years oldIt has roots in a piece of
+                classical Latin liter.
+              </p>
+              <ul className="p-0">
+                <li>Neque porro quisquat qui dolorem</li>
+                <li>Randomised words which don't look</li>
+              </ul>
+              <p className="mb-0 fw-500">
+                It has roots in a piece of classical Latin liter ature from 45
+                BCIt has roots.
+              </p>
+              <div className="flex-shrink-0 d-block d-md-none">
+                <Button className="custom_btn save-note">Save Note</Button>
+              </div>
+            </div>
+            <div className="flex-shrink-0 d-none d-md-block">
+              <Button className="custom_btn save-note">Save Note</Button>
+            </div>
+          </div>
+          <div className="custom-accordion-wrapper">
+            <Accordion flush>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  <div className="d-flex align-items-center mb-3">
+                    <span className="header-title">
+                      {" "}
+                      Consultation - Physio Paul
+                    </span>
+                    <div className="d-none d-sm-block">
+                      <span className="label-wrap">Dec 2022</span>
+                    </div>
+                  </div>
+                  <p className="short-desc fw-500 text-manatee mb-0 small">
+                    Pain In left hand knuckles & Thumb Blood work showed
+                    Anti-cyclic citrullinated Peptide Pain In left hand
+                  </p>
+                  <div className="d-block d-sm-none">
+                    <span className="label-wrap">Dec 2022</span>
+                  </div>
+                </Accordion.Header>
+
+                <Accordion.Body>
+                  Pain In left hand knuckles & Thumb Blood work showed
+                  Anti-cyclic citrullinated Peptide Pain In left hand knuckles &
+                  Thumb Blood work showed Anti-cyclic citrullinated Peptide Pain
+                  In left hand
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  <div className="d-flex align-items-center mb-3">
+                    <span className="header-title">
+                      {" "}
+                      Consultation - Physio Paul
+                    </span>
+                    <div className="d-none d-sm-block">
+                      <span className="label-wrap">Dec 2022</span>
+                    </div>
+                  </div>
+                  <p className="short-desc fw-500 text-manatee mb-0 small">
+                    Pain In left hand knuckles & Thumb Blood work showed
+                    Anti-cyclic citrullinated Peptide Pain In left hand
+                  </p>
+                  <div className="d-block d-sm-none">
+                    <span className="label-wrap">Dec 2022</span>
+                  </div>
+                </Accordion.Header>
+
+                <Accordion.Body>
+                  Pain In left hand knuckles & Thumb Blood work showed
+                  Anti-cyclic citrullinated Peptide Pain In left hand Pain In
+                  left hand knuckles & Thumb Blood work showed Anti-cyclic
+                  citrullinated Peptide Pain In left hand
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </div>
+        </div>
+        <div className="d-flex flex-column">
+          <div className="patient-detail-card bg patients-tasks-wrap">
+            <div className="d-flex align-items-center justify-content-between documents-title-wrap">
+              <h4 className="h4 fw-600 text-stratos mb-0">Patients Tasks</h4>
+              <Button className="transaparent-btn d-flex align-items-center justify-content-end">
+                <span className="d-inline-block me-3">Add new</span>
+                <Image src={PlusIcon} />
+              </Button>
+            </div>
+            <div className="documents-link-wrap">
+              <Link className="d-flex align-items-center justify-content-between">
+                <span className=" me-3 text-ellipsis">
+                  Appointment Scheduling
+                </span>
+                <span className="flex-shrink-0">
+                  <Image src={EditIcon} className="me-3" />
+                  <Image src={DeleteIcon} />
+                </span>
+              </Link>
+              <Link className="d-flex align-items-center justify-content-between">
+                <span className=" me-3 text-ellipsis">Medication Reminder</span>
+                <span className="flex-shrink-0">
+                  <Image src={EditIcon} className="me-3" />
+                  <Image src={DeleteIcon} />
+                </span>
+              </Link>
+              <Link className="d-flex align-items-center justify-content-between">
+                <span className=" me-3 text-ellipsis">
+                  Health Tracker Input
+                </span>
+                <span className="flex-shrink-0">
+                  <Image src={EditIcon} className="me-3" />
+                  <Image src={DeleteIcon} />
+                </span>
+              </Link>
+            </div>
+          </div>
+          <div className="patient-detail-card bg opportunities-wrap">
+            <div className="d-flex align-items-center justify-content-between documents-title-wrap">
+              <h4 className="h4 fw-600 text-stratos mb-0">Opportunities</h4>
+              <Button className="transaparent-btn d-flex align-items-center justify-content-end">
+                <span className="d-inline-block me-3">Add new</span>
+                <Image src={PlusIcon} />
+              </Button>
+            </div>
+            <div className="opportunities-items-wrap">
+              <div className="d-flex align-items-center opportunities-items">
+                <div className="avatar-img-wrap flex-shrink-0">
+                  <Image src={Avatar3} />
+                </div>
+                <div className="me-2">
+                  <h6 className="small text-text-stratos fw-600 text-ellipsis text-break">
+                    Mary Kenny <Image src={Flag} />
+                  </h6>
+                  <span className=" mb-0 text-manatee fw-500 p text-ellipsis text-break">
+                    Send SMS Rminder Missed Follow up
+                  </span>
+                </div>
+                <div className="btn-wrap ms-auto flex-shrink-0">
+                  <Button className="custom_btn">Send SMS</Button>
+                </div>
+              </div>
+              <div className="d-flex align-items-center opportunities-items">
+                <div className="avatar-img-wrap flex-shrink-0">
+                  <Image src={Avatar3} />
+                </div>
+                <div className="me-2">
+                  <h6 className="small text-text-stratos fw-600 text-ellipsis text-break">
+                    Mary Kenny <Image src={Flag} />
+                  </h6>
+                  <span className=" mb-0 text-manatee fw-500 p text-ellipsis text-break">
+                    Send SMS Rminder Missed Follow up
+                  </span>
+                </div>
+                <div className="btn-wrap ms-auto flex-shrink-0">
+                  <Button className="custom_btn">Send SMS</Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };
