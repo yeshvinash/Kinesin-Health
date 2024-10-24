@@ -1,0 +1,165 @@
+.headarstyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 14px;
+    border-radius: 90px;
+    background: #ECECF8;
+}
+.containeralart {
+    padding: 0px;
+    background: #fff;
+}
+.search_bar {
+    position: relative;
+}
+.search_bar .form-control {
+    height: 52px;
+    max-width: 248px;
+    border-radius: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 20px 0px 40px;
+    background: #fff;
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+}
+.search_bar img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hedconttoggel button {
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #060030;
+}
+.hedconttoggel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hedconttoggel .logiconbox {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    margin-right: 14px;
+}
+span.navicon {
+    margin-right: 7px;
+}
+.headarstyle .nav__item a {
+    padding: 0px 18px;
+}
+.headarstyle .nav__menu {
+    gap: 0px;
+}
+.headarstyle .navflex {
+    gap: 20px;
+}
+.headarstyle .nav__menu li + li {
+    border-left: 1px solid #DBDBEC;
+}
+.diflexmenu {
+    display: flex;
+    align-items: center;
+}
+/* start 01.06.23 */
+
+
+.navebg {
+    background: #F5F5FD;
+    flex: 0 0 92%;
+    padding: 18px 30px 40px;
+    border-radius: 46px 0px 0px 0px;
+    margin-left: auto;
+}
+.nav.dashBnav {
+    gap: 0px;
+    padding: 0px;
+    justify-content: unset;
+    align-items: center;
+}
+.nav.dashBnav .navbar-brand {
+    /* flex: 0 0 6%; */
+    text-align: center;
+    position: fixed;
+    width: 87px;
+    left: 15px;
+}
+.nav.dashBnav .navbar-brand img {
+    width: 71px;
+}
+/* end 01.06.23 */
+
+/* start 22.06.23 */
+.nav__item.itemphon {
+    display: none;
+}
+/* end 22.06.23 */
+
+/* start 24.08.23 */
+.dropdown-menu.profiledropdown {
+    min-width: 272px;
+    margin-top: 14px !important;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    padding: 5px 20px;
+}
+.dropdown-menu.profiledropdown .profilelink {
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu.profiledropdown .profilelink.bdrbttom {
+    border-bottom: 1px solid #0000002e;
+}
+.dropdown-menu.profiledropdown li {
+    padding: 15px 0px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkimg {
+    min-width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkimg img {
+    width: 100%;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkdetails h6 {
+    color: #3E3E46;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0px;
+}
+.dropdown-menu.profiledropdown .profilelink .profilelinkdetails p {
+    color: #8D8DA3;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.profilelink .dropicon {
+    min-width: 27px;
+    width: 27px;
+    margin-right: 10px;
+}
+.logiconimg {
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+/* end 24.08.23 */
