@@ -44,7 +44,7 @@ const Sidebar = () => {
               <span className="sidebarmenu">HOMEPAGE</span>
             </Link>
             <Link
-              to="/home"
+              to="/appointments"
               className={`menulist ${
                 isActive("/appointments") ? "active" : ""
               }`}
@@ -76,8 +76,8 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/health-record") ? "active" : ""}`}
-              onClick={() => handleMenuClick("health-record")}
+              className={`menulist ${isActive("/") ? "active" : ""}`}
+              onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={HealthRecord} alt="" />
               <img className="imgacctive" src={HealthRecord1} alt="" />
@@ -85,15 +85,15 @@ const Sidebar = () => {
             </Link>
             <Link
               to="/home"
-              className={`menulist ${isActive("/lab-results") ? "active" : ""}`}
-              onClick={() => handleMenuClick("lab-results")}
+              className={`menulist ${isActive("/") ? "active" : ""}`}
+              onClick={() => handleMenuClick("")}
             >
               <img className="nonactive" src={LabResults} alt="" />
               <img className="imgacctive" src={LabResults1} alt="" />
               <span className="sidebarmenu">Lab results/ trends</span>
             </Link>
             <Link
-              to="/home"
+              to="/profile"
               className={`menulist ${isActive("/profile") ? "active" : ""}`}
               onClick={() => handleMenuClick("profile")}
             >
