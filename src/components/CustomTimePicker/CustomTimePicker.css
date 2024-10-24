@@ -1,0 +1,55 @@
+.custom-timepicker-wrap .ant-picker {
+  font-size: 18px;
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif !important;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.custom-timepicker-wrap .ant-picker:hover {
+  border-color: #05c882;
+}
+.custom-timepicker-wrap .ant-picker .ant-picker-suffix {
+  color: #05c882;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.custom-timepicker-wrap .ant-picker .ant-picker-input > input {
+  width: auto;
+  color: #05c882;
+  font-size: 16px;
+  font-weight: 500;
+  width: 50px;
+  height: auto;
+}
+.custom-timepicker-wrap .ant-picker-active-bar {
+  display: none;
+}
+.custom-timepicker-wrap .ant-picker-range-separator .ant-picker-separator {
+  display: none;
+}
+.custom-timepicker-wrap .ant-picker-range-separator {
+  position: relative;
+}
+.custom-timepicker-wrap .ant-picker-range-separator::after {
+  content: "-";
+  position: absolute;
+  color: #05c882;
+  width: 100%;
+  height: 17px;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  left: 0;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1799px) {
+  .custom-timepicker-wrap .ant-picker .ant-picker-input > input {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .custom-timepicker-wrap .ant-picker .ant-picker-input > input {
+    font-size: 14px;
+  }
+}
