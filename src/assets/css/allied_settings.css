@@ -1,0 +1,1275 @@
+.signup_threebox.practice_detailssect {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: unset;
+  border-radius:  0 20px 20px 20px;
+}
+.practicedetailssectlist .nav-item {
+  width: 100%;
+  padding: 0px;
+}
+.practicedetailssectlist .nav-item + .nav-item {
+  margin-top: 6px;
+}
+.practicedetailssectlist .nav-item .nav-link {
+  width: 100%;
+  height: 45px;
+  background: #f3f9ff;
+  border-radius: 20px 0px 0px 20px;
+  text-align: left;
+  color: #9cb1c5;
+  font-weight: 600;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+.practicedetailssectlist .nav-item .nav-link img {
+  margin-right: 16px;
+}
+.practicedetailssectlist .nav-item .nav-link.active {
+  background: #05c882;
+  color: #fff;
+}
+.nav.nav-pills.practicedetailssectlist {
+  padding: 0px !important;
+  display: block !important;
+}
+.tabflex.dropdown-menu {
+  position: relative;
+  display: block;
+  border-radius: 0;
+  min-width: 100%;
+  border: 0px;
+  z-index: 0;
+}
+.tabflex {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  padding: 25px 0px;
+}
+.dbflex20 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  border-right: 1px solid #d5d5e5 !important;
+}
+.detailsp_btn {
+  display: none;
+}
+.ptdetalistabcont {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  padding-bottom: 40px;
+}
+.show.active.sectflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.tabdtformsect {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+}
+.dtl_uploadimgsect {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  padding: 25px 0px;
+}
+.upimgbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #d9d9d9;
+  margin: 0 auto;
+}
+.upimgbox .imgbtnup {
+  border: 0px;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  -webkit-filter: drop-shadow(
+    0px 2.4098360538482666px 7.229508399963379px rgba(120, 133, 178, 0.15)
+  );
+  filter: drop-shadow(
+    0px 2.4098360538482666px 7.229508399963379px rgba(120, 133, 178, 0.15)
+  );
+  z-index: 1;
+}
+.tabdtformsect {
+  padding: 25px 0px 0px 15px;
+}
+.locationbox {
+  max-width: 230px;
+  border-radius: 20px;
+  border: 1px solid #f2f2fa;
+  background: #fafafd;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 20px;
+  margin-top: 20px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(37, 61, 100, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(37, 61, 100, 0.08);
+}
+.locationicon {
+  border-radius: 8px;
+  border: 1px solid #b2f9e0;
+  background: #f4fffb;
+  min-width: 39px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.locationbox p {
+  color: #8d8da3;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.locationbox h6 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* start map 24.07.23 */
+.mapstyle {
+  border: 0px;
+  width: 100%;
+  height: 320px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+/* end 24.07.23 */
+
+/* start 25.07.23 */
+.addpatientlist .user_detailsbox {
+  padding: 25px 0px 25px 25px;
+}
+.addpatientlist .user_detailsbox .patientlist {
+  border-radius: 18px;
+  border: 1px solid #d3e3f1;
+}
+.addpatientlist .user_detailsbox .patientlist li {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 28% !important;
+  flex: 0 0 28% !important;
+}
+.addpatientlist .user_detailsbox .patientlist li.editelist {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 16% !important;
+  flex: 0 0 16% !important;
+}
+.listprice2.coltoutline.editelist .edt_rmviconbox {
+  min-width: 65px;
+}
+.addpatientlist .user_detailsbox .patientlist li.coltoutline {
+  border-top: 1px solid #d5d5e6;
+  border-bottom: 0px;
+}
+.ml-auto {
+  margin-left: auto;
+}
+/* end 25.07.23 */
+
+/* start 26.07.23 */
+.userdetailsmodal .modal-dialog {
+  max-width: 1100px;
+}
+.userdetailsmodal .show.active.sectflex {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.userdetailsmodal .dtl_uploadimgsect {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  padding: 0px 20px 20px 20px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 20px;
+}
+.userdetailsmodal .textareaform-control {
+  height: auto !important;
+  padding: 20px !important;
+}
+.userdetailsmodal .tabdtformsect {
+  padding: 30px 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+}
+.userdetailsmodal .upimgbox {
+  margin: 0px;
+}
+.permissionsList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 0px !important;
+}
+.permissionsbox {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  padding-left: 20px;
+}
+.permissionsList li h5 {
+  font-size: 14px;
+  color: #3e3e46;
+  margin: 0px;
+  padding: 0px;
+  width: 120px;
+}
+.permissionsList li .form-switch {
+  margin-left: 10px;
+}
+.permissionsList li .form-check-label {
+  font-size: 14px;
+  color: #8d8da3;
+  margin: 0px;
+  padding: 0px;
+}
+.permissionsbox h4 {
+  font-size: 20px;
+  color: #060030;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.permissionsbox {
+  border-left: 1px solid #e2e2e2;
+}
+.userdetailsmodal .dtl_uploadimgsect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.userdetailsmodal .dtl_uploadimgsect ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 50px;
+  padding: 0;
+}
+.userdetailsmodal .dtl_uploadimgsect ul li {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px;
+}
+.userdetailsmodal .dtl_uploadimgsect ul li:last-child {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+}
+.userdetailsmodal .dtl_uploadimgsect ul li p {
+  line-height: normal;
+}
+.userdetailsmodal .dtl_uploadimgsect ul li .form-control {
+  height: 50px;
+}
+.userdetailsmodal .dtl_uploadimgsect ul li label {
+  /* margin-bottom: 5px; */
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.modal-title {
+  font-size: 20px;
+  color: #060030;
+  font-weight: 600;
+}
+/* end 26.07.23 */
+
+/* start 29.07.23 */
+.service_details ul.patientlist li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+.addpatientlist .service_details .patientlist {
+  border-radius: 18px 18px 0px 0px;
+  border: 1px solid #d3e3f1;
+  border-bottom: 0px;
+}
+.addpatientlist .service_details .pagination_box {
+  border: 1px solid #d3e3f1;
+  border-radius: 0px 0px 18px 18px;
+  width: 100%;
+}
+.addpatientlist .service_details .pagination_box .paginationtext {
+  margin-left: auto;
+}
+.addpatientlist .service_details {
+  padding: 25px 0px 25px 25px;
+}
+.addpatientlist .service_details .patientlist li.coltoutline {
+  border-top: 1px solid #d5d5e6;
+  border-bottom: 0px;
+}
+.servicemodalbox .form-check.form-switch.onoff_area {
+  display: block;
+  padding: 0px;
+}
+.servicemodalbox .onoff_area .form-check-input {
+  margin: 18px 0px 0px;
+}
+/* end 29.07.23 */
+
+/* start 01.08.23 */
+.practice_hours .hours_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.practice_hours {
+  max-width: 840px;
+  margin: 30px 0px 0px 40px;
+}
+.practice_hours .hours_list .hours_head {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  padding: 0px;
+}
+.practice_hours .hours_list li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  padding: 5px 0px;
+  color: #5f5f6d;
+  font-size: 18px;
+  font-weight: 400;
+}
+.practice_hours .hours_list li.timelist {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* gap: 0px 9px; */
+}
+.practice_hours .hours_list li.timelist .input-group-text {
+  padding: 0px 10px 0px 0px;
+  border: 0px;
+  background: transparent;
+  color: #8d8da3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+.practice_hours .hours_list li.timelist .form-select {
+  max-width: 100px;
+  height: 45px;
+  border-radius: 8px !important;
+  border: 1px solid #d3e3f1;
+  color: #8d8da3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.practice_hours .hours_list li h6 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.practice_hours .hours_list li .form-check-label {
+  color: #5f5f6d;
+  font-size: 18px;
+  font-weight: 400;
+}
+.practice_hours .btnxscenter {
+  margin-top: 50px;
+}
+/* start 01.08.23 */
+
+/* start 02.08.23 */
+.forphon {
+  display: none;
+}
+/* end 02.08.23 */
+
+/* start 03.08.23 */
+#addService .form-check-label {
+  width: 100%;
+  min-height: 15px;
+}
+/* end 03.08.23 */
+
+/* start 04.08.23 */
+.user_detailsbox .patientlist .listvat {
+  gap: 0px;
+}
+.checkactive::after {
+  content: "";
+  background: #f8f8ff;
+  width: 357%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+.patientlist .form-group {
+  z-index: 1;
+}
+.rmargin {
+  margin-right: 10px;
+}
+.warningmodal_box .modal-dialog.modal-dialog-centered {
+  max-width: 672px;
+}
+.warningmodal_box .worningimg {
+  width: 140px;
+  height: 140px;
+  background: #fff0f0;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto 50px;
+}
+.success {
+  background: #e8fff7 !important;
+}
+.warningmodal_box h5 {
+  color: #060030;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.warningmodal_box p {
+  color: #8d8da3;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+}
+.warningmodal_box .yesbtn {
+  min-width: 126px;
+  height: 56px;
+  border-radius: 100px;
+  background: #fb4845;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border: 0px;
+}
+.green {
+  width: 192px;
+  height: 56px;
+  border-radius: 100px;
+  background: #05c882 !important;
+}
+.warningmodal_box .cancelbtnlink {
+  font-size: 16px;
+  font-weight: 700;
+  color: #01224d;
+  text-decoration: underline;
+  border: 0px;
+  background: transparent;
+}
+.warningmodal_box .modal-footer {
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  border: 0px;
+  padding: 0 26px 30px !important;
+}
+.warningmodal_box .modal-header {
+  border: 0px;
+}
+.form-selectflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+  margin: 0px;
+}
+.form-selectflex li {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 !important;
+  flex: 0 !important;
+  height: 37px;
+  padding: 0px 11px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  color: #8d8da3;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  white-space: nowrap;
+}
+.form-selectflex li .btn-close {
+  background-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  width: 10px;
+  height: 10px;
+}
+.form-selectflex li.moreoption {
+  background: #ebeff2;
+}
+.frompadding {
+  padding: 10px;
+}
+/* end 04.08.23 */
+
+/* start 07.08.23 */
+.locationdetails {
+  padding: 0px 0px 30px 20px;
+  min-width: 100%;
+  position: relative;
+}
+/* end 07.08.23 */
+
+/* start 08.08.23 */
+.settingsNotificationsect {
+  padding: 30px 60px;
+  width: 100%;
+}
+.settingsNotificationsect .settingsNotlist {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.settingsNotificationsect .settingsNotlist li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px;
+}
+.settingsNotificationsect .settingsNotlist li + li {
+  margin-top: 30px;
+}
+.settingsNotificationsect .settingsNotlist li h6 {
+  color: #5f5f6d;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px;
+  line-height: normal;
+  min-width: 50%;
+}
+.settingsNotificationsect .settingsNotlist li .form-check-label {
+  color: #949494;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  font-weight: 400;
+  line-height: normal;
+}
+.settingsNotificationsect .btnxscenter {
+  margin-top: 50px;
+}
+
+/* start 11.08.23 */
+.paymentsdetailsec {
+  padding: 24px 0px 0px 60px;
+}
+.paymentsdetailsec h5 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.paymentsdetailsec p {
+  color: #9cb1c5;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+.paymentsdetailsec .btnxscenter {
+  margin-top: 50px;
+  text-align: left;
+}
+.payments_settingsbox {
+  border-radius: 20px;
+  background: #05c882;
+  width: 100%;
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+.payments_settingsbox h3 {
+  margin: 0px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: normal;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+.payments_settingsbox .stripe_set_upbtn {
+  min-width: 300px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #05c882;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.payments_settingsbox .stripe_set_upbtn:hover {
+  background: transparent;
+  color: #fff;
+}
+.nav-link.active .tnonactivimg {
+  display: none;
+}
+.tnonactivimg {
+  display: block;
+}
+.nav-link .tactivimg {
+  display: none;
+}
+.nav-link.active .tactivimg {
+  display: block;
+}
+/* end 11.08.23 */
+
+/* start 12.08.23 */
+.deletext {
+  max-width: 360px;
+  margin: 0 auto;
+}
+/* end 12.08.23 */
+
+/* start 13.09.23 */
+.addpatientlist .user_detailsbox .smssetab .patientlist li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 34%;
+  flex: 0 0 34%;
+}
+.addpatientlist .user_detailsbox .smssetab .patientlist li.editelist {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16%;
+  flex: 0 0 16%;
+}
+.addpatientlist .user_detailsbox .smssetab .patientlist li.listvat2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+.smssetab .listprice2 h5 {
+  color: #3e3e46;
+  font-size: 16px;
+  font-weight: 500;
+}
+.smssetab .listprice2 p {
+  color: #8d8da3;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sms_settingstabnav .nav {
+  padding: 0px;
+  border: none;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.sms_settingstabnav .nav-tabs .nav-link.active {
+  height: 60px;
+  padding: 0px 20px;
+  border-radius: 12px 12px 0px 0px;
+  background: #5d35e9;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.tmpbtnicon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #eae8ff;
+  margin-right: 10px;
+}
+/* end 13.09.23 */
+
+/* start 28.09.23 */
+.form-control {
+  min-width: 100%;
+  height: 60px;
+  border-radius: 9px;
+  border: 1px solid #d3e3f1;
+  font-size: 14px;
+  color: #8d8da3;
+}
+/* end 28.09.23 */
+
+/* start 03.10.23 */
+.cercelimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.cercelimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* end 03.10.23 */
+
+/* start 20.10.23 */
+.smsmobile {
+  display: none;
+}
+/* end 20.10.23 */
+
+/* start 31.10.23 */
+.warningmodal_box .add_document-centered {
+  max-width: 962px;
+}
+.warningmodal_box
+  .add_document-centered
+  .priorityform
+  .form-select.form-control {
+  padding-left: 25px;
+}
+.warningmodal_box .add_document-centered label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.warningmodal_box .add_document-centered .modal-footer .custom_btn {
+  /* width: 100%; */
+  font-size: 16px;
+  /* font-weight: 700; */
+}
+.warningmodal_box .add_document-centered .modal-footer {
+  padding-bottom: 25px;
+  padding-top: 0px;
+}
+.warningmodal_box .add_document-centered .modal-header {
+  border: 1px solid #e2e2e2;
+}
+.warningmodal_box .add_document-centered .modal-body {
+  padding: 20px 30px 0px;
+}
+.documentUploadbtn {
+  width: 100%;
+  height: 177px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px dashed #c8c8c8;
+  background: #fff;
+  border-radius: 9px;
+  margin-bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  /* -ms-flex-direction: column;
+  flex-direction: column; */
+  cursor: pointer;
+}
+.documentUploadbtn h6 {
+  color: #8b8b8b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0px;
+}
+/* end 31.10.23 */
+
+.error-msg {
+  font-size: 13px;
+  background-color: #fff1f7;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.practice_hours .hours_list li.timelist .input-group{
+  min-width: 170px;
+  max-width: 170px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1599px) {
+  .smssetab .listprice2 p {
+    font-size: 15px;
+  }
+  .payments_settingsbox h3 {
+    font-size: 26px;
+  }
+  .settingsNotificationsect .settingsNotlist li + li {
+    margin-top: 20px;
+  }
+  .payments_settingsbox {
+    padding: 20px 25px;
+    margin-bottom: 25px;
+  }
+  .payments_settingsbox .stripe_set_upbtn {
+    min-width: 220px;
+    height: 46px;
+    font-size: 14px;
+  }
+  .paymentsdetailsec h5 {
+    font-size: 26px;
+  }
+  .paymentsdetailsec p {
+    font-size: 17px;
+  }
+  .smssetab .listprice2 h5 {
+    font-size: 16px;
+  }
+  .sms_settingstabnav .nav-tabs .nav-link.active {
+    height: 50px;
+    font-size: 12px;
+  }
+  .practice_hours .hours_list li h6 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .practice_hours .hours_list li .form-check-label,
+  .practice_hours .hours_list li,
+  .practice_hours .hours_list li.timelist .input-group-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .practicedetailssectlist .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .payments_settingsbox h3 {
+    font-size: 22px;
+  }
+  .settingsNotificationsect .settingsNotlist li h6 {
+    font-size: 16px;
+  }
+  .paymentsdetailsec h5 {
+    font-size: 22px;
+  }
+  .practice_hours .hours_list li.timelist .form-select {
+    max-width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .payments_settingsbox {
+    padding: 16px 25px;
+  }
+  .practice_hours .hours_list li.timelist .input-group {
+    min-width: 150px;
+    max-width: 150px;
+
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .userdetailsmodal .dtl_uploadimgsect ul {
+    margin-left: 20px;
+  }
+  .upimgbox {
+    width: 120px;
+    height: 120px;
+  }
+  .dbflex20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    border-right: 0 !important;
+  }
+  .ptdetalistabcont {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    padding-bottom: 30px;
+    margin-left: auto;
+  }
+  .show.active.sectflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .dtl_uploadimgsect {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-bottom: 0;
+  }
+  .tabdtformsect {
+    padding-left: 0;
+  }
+  .paymentsdetailsec {
+    padding: 24px 0px 0px 20px;
+  }
+  .signup_threebox.addpatientlist {
+    margin-left: 20px;
+  }
+  .addpatientlist .user_detailsbox .patientlist li {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 26% !important;
+    flex: 0 0 26% !important;
+  }
+  .payments_settingsbox {
+    padding: 14px 20px;
+  }
+  .payments_settingsbox h3 {
+    font-size: 19px;
+  }
+  .payments_settingsbox .stripe_set_upbtn {
+    min-width: 200px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .payments_settingsbox h3 {
+    font-size: 25px;
+  }
+  /* .dbflex20 {
+        border-right: 0px !important;
+    } */
+  .userdetailsmodal .dtl_uploadimgsect ul li label {
+    margin-bottom: 5px;
+    white-space: inherit;
+    margin-right: 0px;
+  }
+  .dbflex20 {
+    flex: 0 0 100%;
+  }
+  .signup_threebox.practice_detailssect {
+    flex-direction: column;
+  }
+  .ptdetalistabcont {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding-bottom: 15px;
+    margin-left: unset;
+  }
+  .smsthreebox .ptdetalistabcont{
+    border-radius: 0 20px 20px 20px;
+  }
+  .practicedetailssectlist .nav-item .nav-link {
+    border-radius: 20px;
+  }
+  .signup_threebox.addpatientlist {
+    margin-left: 0px;
+  }
+  .smsmobile {
+    display: block;
+  }
+  .smsmodsk {
+    display: none;
+  }
+  .smsmobile ul li {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .settingsNotificationsect .settingsNotlist li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .settingsNotificationsect
+    .settingsNotlist
+    li
+    .form-check.form-switch.onoff_area {
+    min-width: 100%;
+    margin-top: 12px;
+  }
+  .settingsNotificationsect .settingsNotlist li + li {
+    margin-top: 20px;
+  }
+  .settingsNotificationsect {
+    padding: 35px 25px;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .patientsearchbar.responsivdisplay {
+    display: block;
+  }
+  .patientsheading.mb20 {
+    margin-bottom: 20px;
+  }
+
+  /* start 11.08.23 */
+  .paymentsdetailsec {
+    padding: 24px;
+  }
+  .payments_settingsbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .payments_settingsbox .stripe_set_upbtn {
+    margin-top: 12px;
+    min-width: 230px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .paymentsdetailsec .btnxscenter {
+    margin-top: 30px;
+  }
+  .paymentsdetailsec h5 {
+    font-size: 22px;
+  }
+  .paymentsdetailsec p {
+    font-size: 16px;
+  }
+  .paymentsdetailsec .savwidth {
+    height: 50px;
+  }
+  /* end 11.08.23 */
+
+  /* start 20.10.23 */
+  .addpatientlist .user_detailsbox .patientlist.smssettingdtl li {
+    padding: 14px 20px !important;
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+  }
+  /* .smsmobile {
+    display: block;
+  }
+  .smsmodsk {
+    display: none;
+  } */
+  /* .smsmobile ul li {
+    padding: 0px !important;
+  } */
+  .smsthreebox .dropdown.dbflex20 {
+    margin-top: 20px;
+  }
+  .patientlist.smssettingdtl li:nth-child(3n + 0)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1000vh;
+    border-bottom: 1px solid #d5d5e6;
+    bottom: 0;
+    left: 0%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  /* end 20.10.23 */
+  /* .ptdetalistabcont {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding-bottom: 15px;
+    margin-left: unset;
+  } */
+}
+
+@media only screen and (max-width: 575px) {
+  .userdetailsmodal .dtl_uploadimgsect {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .userdetailsmodal .dtl_uploadimgsect ul {
+    margin-left: 0px !important;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .payments_settingsbox h3 {
+    font-size: 20px;
+  }
+  .paymentsdetailsec h5 {
+    font-size: 19px;
+  }
+  .paymentsdetailsec p {
+    font-size: 14px;
+  }
+  .practice_hours .hours_list li.timelist {
+    flex-wrap: wrap;
+  }
+  .practice_hours .hours_list li.timelist .input-group {
+    flex: 0 0 50%;
+  }
+  .error-msg {
+    margin-top: 12px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .payments_settingsbox h3 {
+    font-size: 18px;
+  }
+  .payments_settingsbox .stripe_set_upbtn {
+    min-width: 190px;
+    font-size: 12px;
+    height: 35px;
+  }
+  .paymentsdetailsec {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .practice_hours .hours_list li.timelist .input-group {
+    flex: 0 0 100%;
+    margin-bottom: 12px;
+  }
+}

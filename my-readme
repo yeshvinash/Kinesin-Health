@@ -1,0 +1,21 @@
+Swagger : https://api-dev.kinesin.health/swagger-ui/index.html
+
+Docs : https://docs.google.com/document/d/1If_yAojLZ5_Q7sfn5eLY8T2swIaIgvbaOCLrN5gOrnY/edit
+
+John's Points : https://docs.google.com/spreadsheets/d/1ec0xblhOcl9u-jsn_pI4T-BbjYgacov2Kvc6zBfDTY4/edit#gid=1482969628
+
+https://docs.google.com/document/d/1Yx3wQRlj2NoqG7sDFQmB_kTT9zzdjlBQuwhIkQajO2A/edit#heading=h.fqwrtwsq9obi
+
+Old : https://www.figma.com/file/O6mOGtIE6A2TALO25VSM6P/Kinesin.health-dashbaord?type=design&node-id=0-1&mode=design
+New : https://www.figma.com/file/zjrEOHWcMfNfQHKSQVJSZp/Kinesin-Health-Dashboards?type=design&node-id=2584-6266&mode=design&t=sTbJyRQm4hnfT4Qf-0
+
+dev :  https://dev.kinesin.health
+
+
+npm install @mui/x-date-pickers
+@emotion/styled
+
+
+rm -r node_modules
+npx npm-force-resolutions
+npm install

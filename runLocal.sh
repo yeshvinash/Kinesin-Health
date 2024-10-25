@@ -1,0 +1,1 @@
+export REACT_APP_ENV=local && npm run start
